@@ -45,7 +45,8 @@ input {
 .footer-shortcuts, .footer-payment-cards,
 .gs-breadcrumb,
 .gs-sidebar__list, .view-options__layouts,
-.product-list__paginations {
+.product-list__paginations,
+.product-info__quantity {
     list-style: none;
     display: inline-block;
     margin: 0;
@@ -71,7 +72,8 @@ input {
 .footer-payment-cards li,
 .gs-breadcrumb li ,
 .view-options__layouts li,
-.product-list__paginations li {
+.product-list__paginations li,
+.product-info__quantity li {
     display: inline-block;
 }
 
