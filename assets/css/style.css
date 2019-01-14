@@ -42,7 +42,10 @@ input {
 
 .social-media, .time-opening, .authentication, 
 .footer-col__item, .footer-contact__info,
-.footer-shortcuts, .footer-payment-cards {
+.footer-shortcuts, .footer-payment-cards,
+.gs-breadcrumb,
+.gs-sidebar__list, .view-options__layouts,
+.product-list__paginations {
     list-style: none;
     display: inline-block;
     margin: 0;
@@ -65,7 +68,10 @@ input {
 .product-item__rating li,
 .authentication li,
 .footer-shortcuts li,
-.footer-payment-cards li {
+.footer-payment-cards li,
+.gs-breadcrumb li ,
+.view-options__layouts li,
+.product-list__paginations li {
     display: inline-block;
 }
 
@@ -324,4 +330,18 @@ h3.gs-field__title {
     font-weight: 300;
     font-size: 1.1rem;
     font-style: italic;
+}
+
+/*Product*/
+.gs-breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+}
+
+.product-colors {
+    width: 45%;
+}
+
+.product-list__paginations {
+    float: right;
 }
