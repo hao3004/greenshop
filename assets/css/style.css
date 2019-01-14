@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css?family=Oregano:400,400i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+/* @font-face {
+    font-family: 'Montana';
+    src: url('../fonts/Montana.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+
+:root {
+    font-size: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+a {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+}
+
+input {
+    outline: none;
+}
