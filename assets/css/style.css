@@ -347,3 +347,17 @@ h3.gs-field__title {
 .product-list__paginations {
     float: right;
 }
+/* Cart */
+.gs-cart__options {
+    text-align: right;
+}
+
+.gs-cart-payment {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+
+.gs-cart-product {
+    text-align: center;
+}
