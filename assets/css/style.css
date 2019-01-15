@@ -389,3 +389,29 @@ h3.gs-field__title {
 .gs-news-comment__form input[type="submit"] {
     float: right;
 }
+
+/* .gs-register__form label[for="name"] {
+    width: 50%;
+} */
+
+.gs-register__form label {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+label[for="hasSubscribe"] {
+    width: 100%;
+}
+
+.gs-register__form input {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+}
+
+.gs-register__form input {
+    width: 100%;
+}
