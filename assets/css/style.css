@@ -46,7 +46,8 @@ input {
 .gs-breadcrumb,
 .gs-sidebar__list, .view-options__layouts,
 .product-list__paginations,
-.product-info__quantity {
+.product-info__quantity,
+.gs-news-comment__list, .gs-news-comment__response {
     list-style: none;
     display: inline-block;
     margin: 0;
@@ -360,4 +361,31 @@ h3.gs-field__title {
 
 .gs-cart-product {
     text-align: center;
+}
+
+/* NEWS DETAILS */
+.gs-news-comment__avatar {
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+}
+
+.gs-news-comment__content {
+    display: inline-block;
+    width: 80%;
+}
+
+.gs-news-comment__form input[type="text"],
+.gs-news-comment__form input[type="email"],
+.gs-news-comment__form input[type="tel"] {
+    display: inline-block;
+    width: 30%;
+}
+
+.gs-news-comment__form textarea {
+    width: 100%;
+}
+
+.gs-news-comment__form input[type="submit"] {
+    float: right;
 }
