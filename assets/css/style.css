@@ -415,3 +415,123 @@ input[type="checkbox"] {
 .gs-register__form input {
     width: 100%;
 }
+
+/* MENU */
+
+.gs-navigation {
+    margin:0 auto;
+    padding:0 15px;
+    position:relative;
+}
+.gs-navigation ul {
+    margin:0;
+    padding:0;
+}
+.gs-navigation ul li {
+    float: left;
+    position: relative;
+    font-size: 10px;
+    list-style: none;
+    width: 12%;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 5;
+}
+
+.gs-navigation ul li a {
+    color: #686868;
+    padding: 11px 21px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.gs-navigation ul li .gs-navigation__sub-menu {
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:0px;
+    top:60px;
+    background:#fff;
+    width: 180px;
+    opacity:0;
+    visibility:hidden;
+    -moz-transition:opacity 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    -webkit-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+    -o-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+    transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+}
+.gs-navigation ul li .gs-navigation__sub-menu li {
+    border:none;
+    clear:both;
+    margin-top:-15px;
+    padding:0;
+    width: 180px;
+    -moz-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+    -webkit-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+    -o-transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+    transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+}
+
+
+.gs-navigation ul li:hover .gs-navigation__sub-menu {
+    opacity:1;
+    visibility:visible;
+}
+.gs-navigation ul li:hover .gs-navigation__sub-menu li {
+    margin-top:0;
+    opacity:1;
+    }
+.gs-navigation ul li:hover .gs-navigation__sub-menu li a {
+    color:#686868;
+    -moz-transition:color 0.1s ease-out;
+    -webkit-transition:color 0.1s ease-out;
+    -o-transition:color 0.1s ease-out;
+    transition:color 0.1s ease-out;
+}
+.gs-navigation ul li:hover .gs-navigation__sub-menu li a:hover {
+    color:#686868;
+    -moz-transition:color 0.3s ease-out;
+    -webkit-transition:color 0.3s ease-out;
+    -o-transition:color 0.3s ease-out;
+    transition:color 0.3s ease-out;
+}
+
+/* SUB SUB LIST */
+.gs-navigation ul li .gs-navigation__sub-menu li .gs-navigation__sub-sub-menu {
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:130px;
+    top:0px;
+    background:#fff;
+    width:180px;
+    opacity:0;
+    visibility:hidden;
+    -moz-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    -webkit-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    -o-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+}
+
+.gs-navigation ul li .gs-navigation__sub-menu li .gs-navigation__sub-sub-menu li{
+    border:none;
+    clear:both;
+    margin:0;
+    padding:0;
+    width: 180px;
+    opacity:1;
+}
+
+.gs-navigation ul li .gs-navigation__sub-menu li:hover .gs-navigation__sub-sub-menu {
+    opacity:1;
+    left:180px;
+    visibility:visible;
+}
+
+/* END MENU */
