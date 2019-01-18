@@ -983,3 +983,120 @@ input[type="checkbox"] {
     color: #7d7d7d;
     font-size: 1.2rem;
 }
+
+.gs-page__title {
+    color: #3fb871;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: Arial;
+    font-weight: 600;
+    margin: 48px 0 30px;
+}
+
+.gs-cart-product-wrap {
+    margin-top: 7.5rem;
+}
+
+.gs-cart-product th {
+    background: #3fb871;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 13px;
+}
+
+.gs-cart-product tr th:first-child {
+    width: 17%;
+    border-right: 1px solid #ebebeb;
+}
+
+.gs-cart-product td,
+.gs-cart-product-payment td {
+    vertical-align: baseline;
+    border: 1px solid #ebebeb;
+}
+
+.gs-cart-product td:first-child {
+    padding: 17px;
+}
+
+.gs-cart-product td h5 {
+    color: #3fb871;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: Arial;
+    font-weight: 600;
+    margin: 48px 0 30px;
+}
+
+.gs-cart-product td span {
+    color: #898989;
+    font-size: 1.8rem;
+}
+
+.gs-cart-product__quantity {
+    border: 1px solid #ebebeb;
+    padding: 12px;
+}
+
+.gs-cart-product i {
+    color: #898989;
+    font-size: 1.6rem;
+}
+
+.gs-cart__options {
+    margin: 2.8rem 0 6.8rem;
+}
+
+.gs-cart__options-btn {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 11px 25px;
+    border-radius: 25px;
+}
+
+.gs-cart__options-btn--cancel {
+    color: #3fb871;
+    background: #fff;
+    border: 1px solid #3fb871;
+    margin-right: 18px;
+}
+
+.gs-cart-product-payment th {
+    color: #3fb871;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3.2rem;
+    width: 64%;
+}
+
+.gs-cart-product-payment td {
+    color: #3fb871;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: inherit;
+}
+
+.gs-cart-product-payment .gs-cart-payment__sum {
+    color: #fff;
+    background: #3fb871;
+    font-size: 1.7rem;
+    padding: 2.7rem;
+}
+
+.gs-cart-payment__btn {
+    background: #3fb871;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: Arial;
+    text-transform: uppercase;
+    padding: 11px 31px;
+    margin: 25px 0;
+    border-radius: 20px;
+}

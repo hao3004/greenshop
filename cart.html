@@ -1,4 +1,5 @@
 <!doctype html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<title>Green Shop</title>
@@ -16,16 +17,110 @@
 		<link rel="stylesheet" href="assets/libs/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
-	</head>
-	<body>
-        <div class="gs-main">
+    </head>
+    <body>
+		<header id="gs-header" class="gs-header">
+            <div class="gs-header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="time-opening">
+                                <i class="far fa-clock"></i>
+                                <span>Open time: 8:00 - 18:00 Monday - Sunday</span>
+                            </div>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="authentication">
+                                <li><a href="#" class="authentication__login"><i class="fas fa-user"></i>Đăng nhập</a></li>
+                                <li><a href="#" class="authentication__signin"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gs-header__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="logo">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </h1>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hotline">
+                                <i class="fas fa-phone"></i>
+                                <span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
+                            </div>
+                            <form class="search">
+                                <input type="text" placeholder="Tìm kiếm" id="keywords"	name="keywords" class="search_input"/>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <a href="#" class="cart-btn">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>0 Sản phẩm</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="gs-navigation">
+            <div class="container">
+                <!-- GENERAL MENU -->
+                <ul id="menu" class="gs-navigation__menu">
+                    <li>
+                        <a href="#" class="btn" id="gs-navigation__toggle-btn"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Cây chậu treo</a></li>
+                            <li><a href="#">Cây có hoa<i class="fas fa-angle-right"></i></a>
+                                <ul class="subsublist gs-navigation__sub-sub-menu">
+                                    <li><a href="#">Cây có hoa tím</a></li>
+                                    <li><a href="#">Cây có hoa đỏ</a></li>
+                                    <li><a href="#">Cây có hoa xanh</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cây dây leo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sản phẩm mới<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Cây mới trong tháng</a></li>
+                            <li><a href="#">Cây mới trong tuần</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <!-- MENU FOR MOBILE -->
+                <div id="gs-navigation__menu--mobile-overlay" style="background: teal; display: none">
+                    <ul id="gs-navigation__menu--mobile">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="gs-produts-wrap">
             <div class="container">
                 <ul class="gs-breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li>Giỏ Hàng</li>
+                    <li><a href="#">Giỏ hàng</a></li>
                 </ul>
+                <h3 class="gs-page__title">Giỏ hàng</h3>
                 <div class="gs-cart">
-                    <div class="table-responsive">
+                    <div class="table-responsive-md gs-cart-product-wrap">
                         <table class="table gs-cart-product">
                             <thead>
                                 <tr>
@@ -46,16 +141,16 @@
                                         <h5 class="gs-cart-product__name">Cây văn phòng</h5>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__price">270.000 đ</span>
+                                        <span>270.000 đ</span>
                                     </td>
                                     <td>
                                         <span class="gs-cart-product__quantity">35</span>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__price">270.000 đ</span>
+                                        <span>270.000 đ</span>
                                     </td>
                                     <td>
-                                        <i class="fas fa-trash-alt"></i>
+                                        <a href="#"><i class="fas fa-trash-alt"></i></a> 
                                     </td>
                                 </tr>
                                 <tr>
@@ -66,16 +161,16 @@
                                         <h5 class="gs-cart-product__name">Cây văn phòng</h5>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__price">270.000 đ</span>
+                                        <span>270.000 đ</span>
                                     </td>
                                     <td>
                                         <span class="gs-cart-product__quantity">35</span>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__price">270.000 đ</span>
+                                        <span>270.000 đ</span>
                                     </td>
                                     <td>
-                                        <i class="fas fa-trash-alt"></i>
+                                        <a href="#"><i class="fas fa-trash-alt"></i></a> 
                                     </td>
                                 </tr>
                                 <tr>
@@ -86,27 +181,27 @@
                                         <h5 class="gs-cart-product__name">Cây văn phòng</h5>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__price">270.000 đ</span>
+                                        <span>270.000 đ</span>
                                     </td>
                                     <td>
                                         <span class="gs-cart-product__quantity">35</span>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__price">270.000 đ</span>
+                                        <span>270.000 đ</span>
                                     </td>
                                     <td>
-                                        <i class="fas fa-trash-alt"></i>
+                                        <a href="#"><i class="fas fa-trash-alt"></i></a> 
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div> <!-- end table-responsive -->
                     <div class="gs-cart__options">
-                        <a href="#" class="btn btn-light">Hủy đơn Hàng</a>
-                        <a href="#" class="btn btn-success">Tiếp tục mua</a>
+                        <a href="#" class="btn btn-light gs-cart__options-btn gs-cart__options-btn--cancel">Hủy đơn Hàng</a>
+                        <a href="#" class="btn btn-success gs-cart__options-btn gs-cart__options-btn--cont">Tiếp tục mua</a>
                     </div>
                     <div class="gs-cart-payment">
-                        <table class="table gs-cart-product">
+                        <table class="table gs-cart-product-payment">
                             <tbody>
                                 <tr>
                                     <th scope="col" class="gs-cart-payment__item">Tổng tiền (chưa thuế)</th>
@@ -128,8 +223,8 @@
                                     <th scope="col" class="gs-cart-payment__sum">
                                         Tổng phải thanh toán
                                     </td>
-                                    <td>
-                                        <span class="gs-cart-payment__sum">270.000 đ</span>
+                                    <td class="gs-cart-payment__sum">
+                                        <span>270.000 đ</span>
                                     </td>
                                 </tr>
                             </tfoot>
