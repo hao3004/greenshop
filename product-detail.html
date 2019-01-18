@@ -16,78 +16,323 @@
 		<link rel="stylesheet" href="assets/libs/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
-	</head>
-	<body>
-        <div class="gs-main">
+    </head>
+    <body>
+		<header id="gs-header" class="gs-header">
+            <div class="gs-header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="time-opening">
+                                <i class="far fa-clock"></i>
+                                <span>Open time: 8:00 - 18:00 Monday - Sunday</span>
+                            </div>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="authentication">
+                                <li><a href="#" class="authentication__login"><i class="fas fa-user"></i>Đăng nhập</a></li>
+                                <li><a href="#" class="authentication__signin"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gs-header__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="logo">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </h1>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hotline">
+                                <i class="fas fa-phone"></i>
+                                <span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
+                            </div>
+                            <form class="search">
+                                <input type="text" placeholder="Tìm kiếm" id="keywords"	name="keywords" class="search_input"/>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <a href="#" class="cart-btn">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>0 Sản phẩm</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="gs-navigation">
+            <div class="container">
+                <!-- GENERAL MENU -->
+                <ul id="menu" class="gs-navigation__menu">
+                    <li>
+                        <a href="#" class="btn" id="gs-navigation__toggle-btn"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Cây chậu treo</a></li>
+                            <li><a href="#">Cây có hoa<i class="fas fa-angle-right"></i></a>
+                                <ul class="subsublist gs-navigation__sub-sub-menu">
+                                    <li><a href="#">Cây có hoa tím</a></li>
+                                    <li><a href="#">Cây có hoa đỏ</a></li>
+                                    <li><a href="#">Cây có hoa xanh</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cây dây leo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sản phẩm mới<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Cây mới trong tháng</a></li>
+                            <li><a href="#">Cây mới trong tuần</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <!-- MENU FOR MOBILE -->
+                <div id="gs-navigation__menu--mobile-overlay" style="background: teal; display: none">
+                    <ul id="gs-navigation__menu--mobile">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="gs-produts-wrap">
             <div class="container">
                 <ul class="gs-breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li>Cây dạ lam</li>
+                    <li><a href="#">Cây đa lam</a></li>
                 </ul>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="product-imgs">
-                                This is Slide :'>
+                <div class="product-detail-wrap">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="product-imgs">
+                                <img src="assets/images/product-detail-main.jpg" alt="products"/>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/images/product-detail-main.jpg" alt="products"/>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/images/product-detail-main.jpg" alt="products"/>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="assets/images/product-detail-main.jpg" alt="products"/>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/images/product-detail-main.jpg" alt="products"/>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="assets/images/product-detail-main.jpg" alt="products"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="product-info">
+                                <h3 class="product-item__title">Cây Dạ Lam</h3>
+                                <ul class="product-item__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                    <li><i class="far fa-star"></i></li>
+                                </ul>
+                                <span class="product-item__price">
+                                    4.099.000 đ <del>5.099.000 đ</del>
+                                </span>
+                                <p class="product-info__description">
+                                    Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eum consequatur soluta, dolore cupiditate natus assumenda.
+                                    adipisicing elit. Sunt eum consequatur soluta, dolore cupiditate natus dolore cupiditate natus assumenda.
+                                </p>
+                                <form>
+                                    <div class="product-info__quantity">
+                                        <label for="quantity">Số lượng</label>
+                                        <div class="product-info__quantity-value">
+                                            <a href="javascript:void(0)" class="decrease-quantity"><i class="fas fa-minus"></i></a>
+                                            <input type="text" id="quantity" name="quantity" value="1"/>
+                                            <a href="javascript:void(0)" class="increase-quantity"><i class="fas fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info__btns">
+                                        <input type="submit" value="Mua ngay" class="btn btn-success product-info__buynow">
+                                        <a href="#" class="btn product-item__detail"><i class="fas fa-search"></i></a>
+                                        <a href="#" class="btn btn product-item__detail"><i class="fas fa-heart"></i></a>
+                                    </div>
+                                </form>
+                                <div class="social-btns">
+                                    <button>Like</button><button>Like</button><button>Like</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="product-info">
-                            <h3 class="product-info__title">Cây Dạ Lam</h3>
-                            <ul class="product-item__rating">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star-half-alt"></i></li>
-                                <li><i class="far fa-star"></i></li>
-                            </ul>
-                            <span class="product-item__price">
-                                250.000đ <del>350.000đ</del>
-                            </span>
-                            <p class="product-info__description">
-                                Cây mọc thành bụi thưa, thân vươn thẳng với chiều cao cây trung  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eum consequatur soluta, dolore cupiditate natus assumenda.
-                            </p>
-                            <span class="product-info__quantity">Số lượng</span>
-                            <ul class="product-info__quantity">
-                                <li><a href="#" class="info__quantity--abstract">-</a></li>
-                                <li><a href="#" class="info__quantity--current">1</a></li>
-                                <li><a href="#" class="info__quantity--add">+</a></li>
-                            </ul>
-                            <div class="product-info__btns">
-                                <a href="#" class="btn btn-success product-info__buynow">Mua ngay</a>
-                                <a href="#" class="btn"><i class="fas fa-search"></i></a>
-                                <a href="#" class="btn"><i class="fas fa-heart"></i></a>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="product-detail-tab">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item product-detail-nav-item">
+                                        <a class="nav-link active product-detail-tab__nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Thông tin sản phẩm</a>
+                                    </li>
+                                    <li class="nav-item product-detail-nav-item">
+                                        <a class="nav-link product-detail-tab__nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Khách hàng đánh giá</a>
+                                    </li>
+                                    <li class="nav-item product-detail-nav-item">
+                                        <a class="nav-link product-detail-tab__nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Thẻ Tags</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content product-detail-tab__content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <p class="product-detail-tab__description">
+                                            Tên phổ thông: Dạ lam, Huỳnh tinh cảnh, Dong vằn.  
+                                            Tên khoa học. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. 
+                                            Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Dicta reprehenderit, vero quae ad dolores quaerat ut in. Nobis quod reprehenderit voluptatibus minus, quos nisi commodi vero dolor qui voluptates earum.
+                                            
+                                            t, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel.
+                                                Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reprehenderit, vero quae ad dolores quaerat ut in. Nobis quod reprehenderit voluptatibus minus, quos nisi commodi vero dolor qui
+                                                voluptates earum.
+                                            
+                                            t, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                                            Lorem ipsum dolor sit amet consectetur adipisic
+                                            ing elit. Dicta reprehenderit, vero quae ad dolores quaerat ut in. Nobis quod reprehenderit voluptatibus minus, quos nisi commodi vero dolor qui voluptates earum.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Huỳnh tinh cảnh, Dong vằn.  Tên khoa học. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethio magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Huỳnh tinh cảnh, Dong vằn.  Tên khoa học. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethimagna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related-products">
+                        <h3 class="gs-field__title">Sản phẩm cùng loại</h3>
+                        <div class="gs-field__products">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-item">
+                                        <div class="product-item__visual">
+                                            <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                            <span class="product-item__status">NEW</span>
+                                            <div class="product-item__layout-grey"></div>
+                                            <div class="product-item__btns">
+                                                <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__info">
+                                            <h5 class="product-item__title">Cây chân chim 3</h5>
+                                            <ul class="product-item__rating">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star-half-alt"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <span class="product-item__price">
+                                                250.000đ <del>350.000đ</del>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-item">
+                                        <div class="product-item__visual">
+                                            <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                            <span class="product-item__status">NEW</span>
+                                            <div class="product-item__layout-grey"></div>
+                                            <div class="product-item__btns">
+                                                <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__info">
+                                            <h5 class="product-item__title">Cây chân chim 3</h5>
+                                            <ul class="product-item__rating">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star-half-alt"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <span class="product-item__price">
+                                                250.000đ <del>350.000đ</del>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-item">
+                                        <div class="product-item__visual">
+                                            <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                            <span class="product-item__status">NEW</span>
+                                            <div class="product-item__layout-grey"></div>
+                                            <div class="product-item__btns">
+                                                <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__info">
+                                            <h5 class="product-item__title">Cây chân chim 3</h5>
+                                            <ul class="product-item__rating">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star-half-alt"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <span class="product-item__price">
+                                                250.000đ <del>350.000đ</del>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-item">
+                                        <div class="product-item__visual">
+                                            <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                            <span class="product-item__status">NEW</span>
+                                            <div class="product-item__layout-grey"></div>
+                                            <div class="product-item__btns">
+                                                <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__info">
+                                            <h5 class="product-item__title">Cây chân chim 3</h5>
+                                            <ul class="product-item__rating">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star-half-alt"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <span class="product-item__price">
+                                                250.000đ <del>350.000đ</del>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
-                    </div>
-                </div>
-                <div class="row">  
-                    <div class="related-products">
-                        <h3 class="gs-field__title">Sản phẩm cùng loại</h3>
-                    </div>
-                </div>
             </div>
         </div>
-        <!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<!-- --><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
     </body>

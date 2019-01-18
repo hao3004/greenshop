@@ -18,11 +18,104 @@
 		<link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
-        <div class="gs-main">
+		<header id="gs-header" class="gs-header">
+            <div class="gs-header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="time-opening">
+                                <i class="far fa-clock"></i>
+                                <span>Open time: 8:00 - 18:00 Monday - Sunday</span>
+                            </div>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="authentication">
+                                <li><a href="#" class="authentication__login"><i class="fas fa-user"></i>Đăng nhập</a></li>
+                                <li><a href="#" class="authentication__signin"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gs-header__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="logo">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </h1>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hotline">
+                                <i class="fas fa-phone"></i>
+                                <span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
+                            </div>
+                            <form class="search">
+                                <input type="text" placeholder="Tìm kiếm" id="keywords"	name="keywords" class="search_input"/>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <a href="#" class="cart-btn">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>0 Sản phẩm</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="gs-navigation">
+            <div class="container">
+                <!-- GENERAL MENU -->
+                <ul id="menu" class="gs-navigation__menu">
+                    <li>
+                        <a href="#" class="btn" id="gs-navigation__toggle-btn"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Cây chậu treo</a></li>
+                            <li><a href="#">Cây có hoa<i class="fas fa-angle-right"></i></a>
+                                <ul class="subsublist gs-navigation__sub-sub-menu">
+                                    <li><a href="#">Cây có hoa tím</a></li>
+                                    <li><a href="#">Cây có hoa đỏ</a></li>
+                                    <li><a href="#">Cây có hoa xanh</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cây dây leo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sản phẩm mới<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Cây mới trong tháng</a></li>
+                            <li><a href="#">Cây mới trong tuần</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <!-- MENU FOR MOBILE -->
+                <div id="gs-navigation__menu--mobile-overlay" style="background: teal; display: none">
+                    <ul id="gs-navigation__menu--mobile">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="gs-produts-wrap">
             <div class="container">
                 <ul class="gs-breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li>Danh sách sản phẩm</li>
+                    <li><a href="#">Danh sách sản phẩm</a></li>
                 </ul>
                 <div class="row">
                     <div class="col-md-3">
@@ -30,26 +123,29 @@
                             <h3 class="gs-field__title">Danh mục sản phẩm</h3>
                             <ul class="gs-sidebar__list product-categories">
                                 <li><a href="#"><i class="fas fa-greater-than"></i>Cây chậu treo<span>(10)</span></a></li>
-                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây chậu treo<span>(10)</span></a></li>
-                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây chậu treo<span>(10)</span></a></li>
-                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây chậu treo<span>(10)</span></a></li>
+                                <li class="active"><a href="#"><i class="fas fa-greater-than"></i>Cây có hoa<span>(5)</span></a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây dây leo</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây để bàn</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây may mắn</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây trang trí</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>Cây nội thất</a></li>
                             </ul>
                             <h3 class="gs-field__title">Tìm theo giá</h3>
                             <ul class="gs-sidebar__list product-prices">
                                 <li><a href="#"><i class="fas fa-greater-than"></i>200.000 Đ - 400.000 Đ</a></li>
-                                <li><a href="#"><i class="fas fa-greater-than"></i>200.000 Đ - 400.000 Đ</a></li>
-                                <li><a href="#"><i class="fas fa-greater-than"></i>200.000 Đ - 400.000 Đ</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>400.000 Đ - 600.000 Đ</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>600.000 Đ - 800.000 Đ</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>800.000 Đ - 1.000.000 Đ</a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"></i>1.000.000 Đ - 2.000.000 Đ</a></li>
                             </ul>
                             <h3 class="gs-field__title">Tìm theo màu</h3>
                             <ul class="gs-sidebar__list product-colors">
                                 <li><a href="#"><img src="assets/images/color_1.png" alt="color_1">Đỏ cam</a></li>
+                                <li><a href="#"><img src="assets/images/color_3.png" alt="color_1">Đỏ cam</a></li>
+                                <li><a href="#"><img src="assets/images/color_3.png" alt="color_1">Đỏ cam</a></li>
                                 <li><a href="#"><img src="assets/images/color_1.png" alt="color_1">Đỏ cam</a></li>
                                 <li><a href="#"><img src="assets/images/color_1.png" alt="color_1">Đỏ cam</a></li>
-                            </ul>
-                            <ul class="gs-sidebar__list product-colors">
-                                <li><a href="#"><img src="assets/images/color_1.png" alt="color_1">Đỏ cam</a></li>
-                                <li><a href="#"><img src="assets/images/color_1.png" alt="color_1">Đỏ cam</a></li>
-                                <li><a href="#"><img src="assets/images/color_1.png" alt="color_1">Đỏ cam</a></li>
+                                <li><a href="#"><img src="assets/images/color_2.png" alt="color_1">Đỏ cam</a></li>
                             </ul>
                         </aside>
                     </div>
@@ -60,13 +156,13 @@
                         <section class="product-list">
                             <div class="view-options">
                                 <div class="row">
-                                    <div class="col-md-8">
+                                    <div class="col-md-6">
                                         <ul class="view-options__layouts">
-                                            <li><a href="#"><i class="fas fa-th"></i></a></li>
+                                            <li><a href="#" class="active"><i class="fas fa-th"></i></a></li>
                                             <li><a href="#"><i class="fas fa-th-large"></i></a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <form class="view-options__form form-inline">
                                             <label for="order">Sắp xếp theo</label>
                                             <select id="order">
@@ -74,8 +170,8 @@
                                                 <option value="1">Giá Tăng Dần</option>
                                                 <option value="2">Sản phẩm mới nhập</option>
                                             </select>
-                                            <label for="order">Show</label>
-                                            <select id="order">
+                                            <label for="quantity">Show</label>
+                                            <select id="quantity">
                                                 <option selected>15</option>
                                                 <option value="1">10</option>
                                                 <option value="2">5</option>
@@ -84,14 +180,91 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="products">
+                            <div class="gs-field__products">
                                 <div class="row">
-
+                                    <div class="col-md-4">
+                                        <div class="product-item">
+                                            <div class="product-item__visual">
+                                                <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                                <span class="product-item__status">NEW</span>
+                                                <div class="product-item__layout-grey"></div>
+                                                <div class="product-item__btns">
+                                                    <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                    <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                <ul class="product-item__rating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                </ul>
+                                                <span class="product-item__price">
+                                                    250.000đ <del>350.000đ</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="product-item">
+                                            <div class="product-item__visual">
+                                                <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                                <span class="product-item__status">NEW</span>
+                                                <div class="product-item__layout-grey"></div>
+                                                <div class="product-item__btns">
+                                                    <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                    <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                <ul class="product-item__rating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                </ul>
+                                                <span class="product-item__price">
+                                                    250.000đ <del>350.000đ</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="product-item">
+                                            <div class="product-item__visual">
+                                                <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                                <span class="product-item__status">NEW</span>
+                                                <div class="product-item__layout-grey"></div>
+                                                <div class="product-item__btns">
+                                                    <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                    <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__info">
+                                                <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                <ul class="product-item__rating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                </ul>
+                                                <span class="product-item__price">
+                                                    250.000đ <del>350.000đ</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="product-list__paginations">
                                 <li><a href="#" class="paginations__prev">Trang Trước</a></li>
-                                <li><a href="#" class="paginations__prev">1</a></li>
+                                <li class="active"><a href="#" class="paginations__prev">1</a></li>
                                 <li><a href="#" class="paginations__prev">2</a></li>
                                 <li><a href="#" class="paginations__prev">3</a></li>
                                 <li><a href="#" class="paginations__prev">4</a></li>
