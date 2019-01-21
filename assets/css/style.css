@@ -630,25 +630,46 @@ span.product-item__price del {
     margin: 0 38px;
 }
 
-.gs-news-comment__form input[type="submit"] {
-    float: right;
+.gs-form__btn {
     color: #fff;
     text-transform: uppercase;
     font-size: 1.4rem;
     background: #3fb871;
+    border-radius: 20px;
+}
+
+.gs-form__btn--reverse {
+    color: #3fb871;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #3fb871;
+}
+
+.gs-register__form .gs-form__btn--reverse,
+.gs-register__form .gs-form__btn {
+    padding: 1rem 4rem;
+    margin-right: 13px;
+}
+
+.gs-news-comment__form .gs-form__btn {
+    float: right;
     padding: 10px 60px;
     margin: 23px 0;
-    border-radius: 20px;
 }
 
 /* .gs-register__form label[for="name"] {
     width: 50%;
-} */
+} 
 
 .gs-register__form label {
     display: inline-block;
     width: 50%;
     float: left;
+    color: #898989;
+    font-size: 1.2rem;
+    margin: 20px 0;
 }
 
 label[for="hasSubscribe"] {
@@ -664,7 +685,110 @@ input[type="checkbox"] {
 }
 
 .gs-register__form input {
+    width: 90%;
+    font-size: 1.5rem;
+    color: #363636;
+    padding: 9px;
+    margin: 7px 0;
+} */
+
+.gs-register__form .form-group {
+    width: 50%;
+    float: left;
+    margin-top: 17px;
+}
+
+.gs-register__form label {
+    display: block;
+    color: #898989;
+    font-size: 1.2rem;
+}
+
+.gs-register__form input {
+    width: 90%;
+    font-size: 1.5rem;
+    color: #363636;
+    padding: 9px;
+    margin: 3px 0;
+}
+
+.gs-register__form .gs-register__form--hasSubscribe {
     width: 100%;
+    margin: 23px 0 58px;
+}
+
+.gs-register__form-btns {
+    margin: 3rem 0;
+}
+
+.gs-register__form--hasSubscribe input[type="checkbox"] {
+    width: 20px;
+}
+
+.gs-register__form label[for="hasSubscribe"] {
+    display: inline-block;
+}
+
+/* Base for label styling */
+.gs-register__form [type="checkbox"]:not(:checked),
+.gs-register__form [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.gs-register__form [type="checkbox"]:not(:checked) + label,
+.gs-register__form [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+.gs-register__form [type="checkbox"]:not(:checked) + label:before,
+.gs-register__form [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #7d7d7d;
+    background: #fff;
+    border-radius: 0;
+}
+/* checked mark aspect */
+.gs-register__form [type="checkbox"]:not(:checked) + label:after,
+.gs-register__form [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.4em;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* checked mark aspect changes */
+.gs-register__form [type="checkbox"]:not(:checked) + label:after {
+opacity: 0;
+transform: scale(0);
+}
+.gs-register__form [type="checkbox"]:checked + label:after {
+opacity: 1;
+transform: scale(1);
+}
+/* disabled checkbox */
+.gs-register__form [type="checkbox"]:disabled:not(:checked) + label:before,
+.gs-register__form [type="checkbox"]:disabled:checked + label:before {
+box-shadow: none;
+border-color: #bbb;
+background-color: #ddd;
+}
+.gs-register__form [type="checkbox"]:disabled:checked + label:after {
+color: #999;
+}
+.gs-register__form [type="checkbox"]:disabled + label {
+color: #aaa;
 }
 
 /* MENU */
@@ -1241,4 +1365,13 @@ input[type="checkbox"] {
 .gs-news-comment__content--main {
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 35px;
+}
+
+.gs-register__title {
+    color: #68ba8f;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: 600;
+    margin-top: 4.2rem;
 }
