@@ -18,11 +18,104 @@
 		<link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
-        <div class="gs-main">
+		<header id="gs-header" class="gs-header">
+            <div class="gs-header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="time-opening">
+                                <i class="far fa-clock"></i>
+                                <span>Open time: 8:00 - 18:00 Monday - Sunday</span>
+                            </div>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="authentication">
+                                <li><a href="#" class="authentication__login"><i class="fas fa-user"></i>Đăng nhập</a></li>
+                                <li><a href="#" class="authentication__signin"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gs-header__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="logo">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </h1>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hotline">
+                                <i class="fas fa-phone"></i>
+                                <span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
+                            </div>
+                            <form class="search">
+                                <input type="text" placeholder="Tìm kiếm" id="keywords"	name="keywords" class="search_input"/>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <a href="#" class="cart-btn">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>0 Sản phẩm</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="gs-navigation">
+            <div class="container">
+                <!-- GENERAL MENU -->
+                <ul id="menu" class="gs-navigation__menu">
+                    <li>
+                        <a href="#" class="btn" id="gs-navigation__toggle-btn"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Cây chậu treo</a></li>
+                            <li><a href="#">Cây có hoa<i class="fas fa-angle-right"></i></a>
+                                <ul class="subsublist gs-navigation__sub-sub-menu">
+                                    <li><a href="#">Cây có hoa tím</a></li>
+                                    <li><a href="#">Cây có hoa đỏ</a></li>
+                                    <li><a href="#">Cây có hoa xanh</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cây dây leo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sản phẩm mới<i class="fas fa-angle-down"></i></a>
+                        <ul class="gs-navigation__sub-menu">
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Cây mới trong tháng</a></li>
+                            <li><a href="#">Cây mới trong tuần</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <!-- MENU FOR MOBILE -->
+                <div id="gs-navigation__menu--mobile-overlay" style="background: teal; display: none">
+                    <ul id="gs-navigation__menu--mobile">
+                        <li><a href="#">Sub link</a></li>
+                        <li><a href="#">Sub link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="gs-news-wrap">
             <div class="container">
                 <ul class="gs-breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li>Tin tức</li>
+                    <li><a href="#">Tin tức</a></li>
                 </ul>
                 <div class="row">
                     <div class="col-md-3">
@@ -55,15 +148,14 @@
                             </div>
                             <h3 class="gs-field__title">Blog Tag</h3>
                             <div class="gs-sidebar__blog-tags">
-                                <span class="gs-sidebar__blog-tag">Cây văn phòng</span>
-                                <span class="gs-sidebar__blog-tag">Cây phát lộc</span>
-                                <span class="gs-sidebar__blog-tag">Cây xanh</span>
-                                <span class="gs-sidebar__blog-tag">Cây trang trí</span>
-                                <span class="gs-sidebar__blog-tag">cây</span>
-                                <span class="gs-sidebar__blog-tag">plants</span>
-                                <span class="gs-sidebar__blog-tag">sức khỏe</span>
-                                <span class="gs-sidebar__blog-tag">QUà tặng</span>
-                                <pan class="gs-sidebar__blog-tag">lưu niệm</pan>
+                                <a href="#" class="gs-sidebar__blog-tag">Cây văn phòng</a>
+                                <a href="#" class="gs-sidebar__blog-tag">Cây phát lộc</a>
+                                <a href="#" class="gs-sidebar__blog-tag">Cây xanh</a>
+                                <a href="#" class="gs-sidebar__blog-tag">Cây trang trí</a>
+                                <a href="#" class="gs-sidebar__blog-tag">cây</a>
+                                <a href="#" class="gs-sidebar__blog-tag">plants</a>
+                                <a href="#" class="gs-sidebar__blog-tag">sức khỏe</a>
+                                <a href="#" class="gs-sidebar__blog-tag">QUà tặng</a>
                             </div>
                         </aside>
                     </div>
@@ -83,12 +175,46 @@
                                 
                                 Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
                                 Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque s Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque s Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque s Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                            </p>
+                            <div class="gs-news__img">
+                                <img src="assets/images/product--news.jpg" alt="product">
+                            </div>
+                            <p class="gs-news__excerpt gs-news__content">
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque s Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque s Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque s Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
+                                Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
                                 Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque similique tenetur consequatur perferendis? Corrupti nam minima ea veniam nulla, sapiente voluptates provident ali. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam harum, facilis nihil, ducimus earum amet vero blanditiis facere, sed ipsum eligendi doloremque consequatur nemo. Dolores doloribus sapiente esse rem!
                             </p>
                         </div>
                         <div class="gs-news-comment-wrap">
                             <h3 class="gs-news-comment__title">Bình luận <span class="gs-news-comment__count">(2)</span> </h3>
-                            <ul class="gs-news-comment__list">
+                            <!-- <ul class="gs-news-comment__list">
                                 <li class="gs-news-comment">
                                     <div class="gs-news-comment__avatar">
                                         <img src="assets/images/avatar.png" alt="avatar">
@@ -97,41 +223,43 @@
                                         <h6 class="gs-news-comment__name">Nguyễn Văn An</h6>
                                         <a href="#" class="gs-news-comment__reply">Trả lời</a>
                                         <p class="gs-news-comment__content-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque sed deleniti facere aspernatur quia non ipsam dolorum officiis dolore culpa temporibus hic explicabo minima, expedita nostrum voluptatum, itaque quo.</p>
-                                        <span class="gs-news-comment__date">Thứ 7, 26/12/2015 12: 00 AM</span>
-                                        <ul class="gs-news-comment__response">
-                                            <li>
-                                                <div class="gs-news-comment__avatar">
-                                                    <img src="assets/images/avatar.png" alt="avatar">
-                                                </div>
-                                                <div class="gs-news-comment__content">
-                                                    <h6 class="gs-news-comment__name">Nguyễn Văn An</h6>
-                                                    <a href="#" class="gs-news-comment__reply">Trả lời</a>
-                                                    <p class="gs-news-comment__content-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque sed deleniti facere aspernatur quia non ipsam dolorum officiis dolore culpa temporibus hic explicabo minima, expedita nostrum voluptatum, itaque quo.</p>
-                                                    <span class="gs-news-comment__date">Thứ 7, 26/12/2015 12: 00 AM</span>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <span class="gs-news-comment__date gs-news-comment__content-main">Thứ 7, 26/12/2015 12: 00 AM</span>
                                     </div>
+                                    <ul class="gs-news-comment__response">
+                                        <li>
+                                            <div class="gs-news-comment__avatar">
+                                                <img src="assets/images/avatar.png" alt="avatar">
+                                            </div>
+                                            <div class="gs-news-comment__content">
+                                                <h6 class="gs-news-comment__name">Nguyễn Văn An</h6>
+                                                <a href="#" class="gs-news-comment__reply">Trả lời</a>
+                                                <p class="gs-news-comment__content-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque sed deleniti facere aspernatur quia non ipsam dolorum officiis dolore culpa temporibus hic explicabo minima, expedita nostrum voluptatum, itaque quo.</p>
+                                                <span class="gs-news-comment__date gs-news-comment__content-main">Thứ 7, 26/12/2015 12: 00 AM</span>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="gs-news-comment">
                                     <div class="gs-news-comment__avatar">
                                         <img src="assets/images/avatar.png" alt="avatar">
                                     </div>
                                     <div class="gs-news-comment__content">
-                                        <h6 class="gs-news-comment__name">Nguyễn Văn An</h6>
-                                        <a href="#" class="gs-news-comment__reply">Trả lời</a>
-                                        <p class="gs-news-comment__content-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque sed deleniti facere aspernatur quia non ipsam dolorum officiis dolore culpa temporibus hic explicabo minima, expedita nostrum voluptatum, itaque quo.</p>
-                                        <span class="gs-news-comment__date">Thứ 7, 26/12/2015 12: 00 AM</span>
+                                        <div class="gs-news-comment__content--main">
+                                            <h6 class="gs-news-comment__name">Nguyễn Văn An</h6>
+                                            <a href="#" class="gs-news-comment__reply">Trả lời</a>
+                                            <p class="gs-news-comment__content-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque sed deleniti facere aspernatur quia non ipsam dolorum officiis dolore culpa temporibus hic explicabo minima, expedita nostrum voluptatum, itaque quo.</p>
+                                            <span class="gs-news-comment__date">Thứ 7, 26/12/2015 12: 00 AM</span>
+                                        </div>
                                     </div>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <div class="gs-news-comment__add">
                                 <h3 class="gs-news-comment__title">Viết Bình luận</h3>
                                 <form class="gs-news-comment__form">
                                     <input type="text" name="name" id="name" placeholder="Họ và tên:"/>
                                     <input type="email" name="email" id="email" placeholder="Email:"/>
                                     <input type="tel" name="tel" id="tel" placeholder="Phone:"/>
-                                    <textarea name="comment" id="comment" cols="30" rows="10">Bình luận</textarea>
+                                    <textarea name="comment" id="comment" cols="30" rows="7">Bình luận</textarea>
                                     <input type="submit" value="Gửi" class="btn btn-success"/>
                                 </form>
                             </div>
