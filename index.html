@@ -48,7 +48,9 @@
 					<div class="row">
 						<div class="col-md-6">
 							<h1 class="logo">
-								<img src="assets/images/logo.png" alt="logo">
+								<a href="#">
+									<img src="assets/images/logo.png" alt="logo">
+								</a>
 							</h1>
 						</div>
 						<div class="col-md-6">
@@ -112,7 +114,30 @@
 			</div>
 		</nav>
 		<section class="gs-sliders">
-			<img src="assets/images/slide.png" alt="slide">
+			<div id="carouselExampleIndicators" class="carousel slide gs-sliders__imgs" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="assets/images/slide--.jpg" alt="slide">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/images/slide---.jpg" alt="slide">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/images/slide-.jpg" alt="slide">
+					</div>
+				</div>
+			</div>
+			<div class="gs-sliders__content">
+				<h2 class="gs-title"><a href="#">Greenshop</a></h2>
+				<img src="assets/images/field-focusing.png" alt="field-focusing"/>
+				<br/>
+				<span>(Miễn phí vẫn chuyển với những đơn hàng trên 5.000.000đ)</span>
+			</div>
 		</section>
 		<div class="gs-main">
 			<div class="container">
@@ -957,18 +982,8 @@
 				<span>Thiết kế bởi Bizweb<!---->&copy;</span>
 			</div>
 		</footer>
-		<!-- <script
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous">
-		</script>
-		<script src="assets/js/loadComponent.js"></script>  -->
-		
-		
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 	</body>
 </html>
