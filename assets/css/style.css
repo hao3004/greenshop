@@ -698,18 +698,27 @@ input[type="checkbox"] {
     margin-top: 17px;
 }
 
+.gs-login__form.gs-register__form .form-group,
+.gs-login__form.gs-register__form .form-group textarea {
+    width: 100%;
+}
+
 .gs-register__form label {
     display: block;
     color: #898989;
     font-size: 1.2rem;
 }
 
-.gs-register__form input {
+.gs-register__form input:not([type="submit"]) {
     width: 90%;
     font-size: 1.5rem;
     color: #363636;
     padding: 9px;
     margin: 3px 0;
+}
+
+.gs-login__form input:not([type="submit"]) {
+    width: 100%;
 }
 
 .gs-register__form .gs-register__form--hasSubscribe {
@@ -1374,4 +1383,8 @@ color: #aaa;
     font-family: Arial;
     font-weight: 600;
     margin-top: 4.2rem;
+}
+
+.gs-map iframe {
+    min-height: 450px;
 }
