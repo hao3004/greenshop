@@ -1401,3 +1401,8 @@ color: #aaa;
 .gs-register__form--savePassword {
     display: inline-block;
 }
+
+.gs-product-review {
+    list-style: none;
+    display: flex;
+}
