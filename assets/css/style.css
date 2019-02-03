@@ -1406,3 +1406,37 @@ color: #aaa;
     list-style: none;
     display: flex;
 }
+
+.product-list__style {
+    position: relative;
+}
+
+.view-options__form {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-list__style .nav-link.active,
+.product-list__style .nav-link {
+    background: transparent;
+    padding: 0;
+}
+
+.product-list__style i {
+    font-size: 1.8rem;
+    margin-left: 9px;
+    color: #d5d1d1e0;
+}
+
+.product-list__style .active i {
+    color: #3fb871;
+}
+
+.product-list__style li:first-child i {
+    margin-left: 0;
+}
+
+.product-item__info--list {
+    display: contents;
+}

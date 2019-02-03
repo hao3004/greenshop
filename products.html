@@ -154,126 +154,159 @@
                             <img src="assets/images/advertising--product.jpg" alt="advertising">
                         </section>
                         <section class="product-list">
-                            <div class="view-options">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul class="view-options__layouts">
-                                            <li><a href="#" class="active"><i class="fas fa-th"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-th-large"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <form class="view-options__form form-inline">
-                                            <label for="order">Sắp xếp theo</label>
-                                            <select id="order">
-                                                <option selected>Tên sản phẩm</option>
-                                                <option value="1">Giá Tăng Dần</option>
-                                                <option value="2">Sản phẩm mới nhập</option>
-                                            </select>
-                                            <label for="quantity">Show</label>
-                                            <select id="quantity">
-                                                <option selected>15</option>
-                                                <option value="1">10</option>
-                                                <option value="2">5</option>
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gs-field__products">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-item__visual">
-                                                <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
-                                                <span class="product-item__status">NEW</span>
-                                                <div class="product-item__layout-grey"></div>
-                                                <div class="product-item__btns">
-                                                    <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
-                                                    <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__info">
-                                                <h5 class="product-item__title">Cây chân chim 3</h5>
-                                                <ul class="product-item__rating">
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star-half-alt"></i></li>
-                                                    <li><i class="far fa-star"></i></li>
-                                                </ul>
-                                                <span class="product-item__price">
-                                                    250.000đ <del>350.000đ</del>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-item__visual">
-                                                <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
-                                                <span class="product-item__status">NEW</span>
-                                                <div class="product-item__layout-grey"></div>
-                                                <div class="product-item__btns">
-                                                    <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
-                                                    <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__info">
-                                                <h5 class="product-item__title">Cây chân chim 3</h5>
-                                                <ul class="product-item__rating">
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star-half-alt"></i></li>
-                                                    <li><i class="far fa-star"></i></li>
-                                                </ul>
-                                                <span class="product-item__price">
-                                                    250.000đ <del>350.000đ</del>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-item__visual">
-                                                <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
-                                                <span class="product-item__status">NEW</span>
-                                                <div class="product-item__layout-grey"></div>
-                                                <div class="product-item__btns">
-                                                    <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
-                                                    <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__info">
-                                                <h5 class="product-item__title">Cây chân chim 3</h5>
-                                                <ul class="product-item__rating">
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star-half-alt"></i></li>
-                                                    <li><i class="far fa-star"></i></li>
-                                                </ul>
-                                                <span class="product-item__price">
-                                                    250.000đ <del>350.000đ</del>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="product-list__paginations">
-                                <li><a href="#" class="paginations__prev">Trang Trước</a></li>
-                                <li class="active"><a href="#" class="paginations__prev">1</a></li>
-                                <li><a href="#" class="paginations__prev">2</a></li>
-                                <li><a href="#" class="paginations__prev">3</a></li>
-                                <li><a href="#" class="paginations__prev">4</a></li>
-                                <li><a href="#" class="paginations__next">Trang Cuối</a></li>
+                            <ul class="nav nav-pills product-list__style" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#grid"><i class="fas fa-th"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#list"><i class="fas fa-th-large"></i></a>
+                                </li>
+                                <form class="view-options__form form-inline">
+                                    <label for="order">Sắp xếp theo</label>
+                                    <select id="order">
+                                        <option selected>Tên sản phẩm</option>
+                                        <option value="1">Giá Tăng Dần</option>
+                                        <option value="2">Sản phẩm mới nhập</option>
+                                    </select>
+                                    <label for="quantity">Show</label>
+                                    <select id="quantity">
+                                        <option selected>15</option>
+                                        <option value="1">10</option>
+                                        <option value="2">5</option>
+                                    </select>
+                                </form>
                             </ul>
+                            
+                            <!-- Tab panes -->
+                            <div class="tab-content gs-field__products">
+                                <div id="grid" class="tab-pane active"><br>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="product-item">
+                                                <div class="product-item__visual">
+                                                    <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                                    <span class="product-item__status">NEW</span>
+                                                    <div class="product-item__layout-grey"></div>
+                                                    <div class="product-item__btns">
+                                                        <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                        <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__info">
+                                                    <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                    <ul class="product-item__rating">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                    <span class="product-item__price">
+                                                        250.000đ <del>350.000đ</del>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-item">
+                                                <div class="product-item__visual">
+                                                    <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                                    <span class="product-item__status">NEW</span>
+                                                    <div class="product-item__layout-grey"></div>
+                                                    <div class="product-item__btns">
+                                                        <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                        <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__info">
+                                                    <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                    <ul class="product-item__rating">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                    <span class="product-item__price">
+                                                        250.000đ <del>350.000đ</del>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-item">
+                                                <div class="product-item__visual">
+                                                    <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                                    <span class="product-item__status">NEW</span>
+                                                    <div class="product-item__layout-grey"></div>
+                                                    <div class="product-item__btns">
+                                                        <a href="#" class="btn btn-primary product-item__buy-now">Mua ngay</a>
+                                                        <a href="#" class="product-item__detail"><i class="fas fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__info">
+                                                    <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                    <ul class="product-item__rating">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star-half-alt"></i></li>
+                                                        <li><i class="far fa-star"></i></li>
+                                                    </ul>
+                                                    <span class="product-item__price">
+                                                        250.000đ <del>350.000đ</del>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list" class="tab-pane fade"><br>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="product-item__img" alt="product" src="assets/images/product-item-big.jpg"/>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="product-item__info product-item__info--list">
+                                                <h5 class="product-item__title">Cây chân chim 3</h5>
+                                                <ul class="product-item__rating">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                </ul>
+                                                <p class="product-info__description">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe voluptas, labore necessitatibus quas qui optio fimilique minima quo numquam ullam?
+                                                </p>
+                                                <span class="product-item__price">
+                                                    250.000đ
+                                                </span>
+                                                <div class="product-info__btns">
+                                                    <input type="submit" value="Mua ngay" class="btn btn-success product-info__buynow">
+                                                    <a href="#" class="btn product-item__detail"><i class="fas fa-search"></i></a>
+                                                    <a href="#" class="btn btn product-item__detail"><i class="fas fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="product-list__paginations">
+                                    <li><a href="#" class="paginations__prev">Trang Trước</a></li>
+                                    <li class="active"><a href="#" class="paginations__prev">1</a></li>
+                                    <li><a href="#" class="paginations__prev">2</a></li>
+                                    <li><a href="#" class="paginations__prev">3</a></li>
+                                    <li><a href="#" class="paginations__prev">4</a></li>
+                                    <li><a href="#" class="paginations__next">Trang Cuối</a></li>
+                                </ul>
+                            </div>
                         </section>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     </body>
 </html>
