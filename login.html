@@ -27,29 +27,33 @@
                 <div class="gs-login">
                     <div class="row">
                         <div class="col-md-6">
-                            <form class="gs-login__form">
+                            <form class="gs-login__form gs-register__form">
                                 <h3 class="gs-register__title">Thông tin cá nhân</h3>
-                                <label for="email">Email của bạn*
+                                <div class="form-group">
+                                    <label for="email">Email của bạn*</label>
                                     <input type="email" name="email" id="email" required/>
-                                </label>
-                                <label for="password">Mật khẩu*
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Mật khẩu*</label>
                                     <input type="password" name="password" id="password" required/>
-                                </label>
-                                <label for="savePassword">
-                                    <input type="checkbox"/>
-                                    Ghi nhớ tài khoản
-                                </label>
-                                <a href="#" class="gs-login__forget-password">Bạn quên mật khẩu?</a>
-                                <a href="#" class="btn btn-light">Quay lại</a>
-                                <button class="btn btn-success">Đăng nhập</button>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group gs-login-options">
+                                    <div class="gs-register__form--savePassword">
+                                        <input type="checkbox" id="savePassword"/>
+                                        <label for="savePassword">Ghi nhớ tài khoản</label>
+                                    </div>
+                                    <a href="#" class="gs-login__forget-password">Bạn quên mật khẩu?</a>
+                                </div>
+                                <input type="submit" class="btn btn-success gs-form__btn" value="Đăng nhập"/>
                             </form>
                         </div>
                         <div class="col-md-6">
                             <h3 class="gs-register__title">Bạn chưa có tài khoản?</h3>
-                            <span class="gs-register__subtitle">
+                            <p class="gs-register__subtitle footer-contact__description gs-footer-text">
                                 Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iste obcaecati sit omnis cum dicta aperiam uconsequatur quaerat ipsa!
-                            </span>
-                            <a href="#" class="btn btn-success">Đăng ký</a>
+                            </p>
+                            <a href="#" class="btn btn-success gs-form__btn">Đăng ký</a>
                         </div>
                     </div>
                 </div>
