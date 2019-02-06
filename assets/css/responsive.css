@@ -132,6 +132,10 @@ ul{
 }
 
 /* styles  */
+nav.gs-navigation {
+    background-color: #3fb871;
+}
+
 .main-menu {
     font-size: 1.3rem;
     font-family: sans-serif;
@@ -148,13 +152,13 @@ ul{
     flex: 1 1 auto;
     color: black;
     text-decoration: none;
-    background-color: #f58122;
+    background-color: #3fb871;
     padding: 10px 0;
 }
 
 .main-menu a:hover {
     color: white;
-    background-color: #b05e1a;
+    background-color: #36a66d;
     cursor: pointer;
 }
 
@@ -213,9 +217,9 @@ ul{
     /* css shapes */
     width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 10px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
 }
 
 /* setting up arrows  */
@@ -227,7 +231,7 @@ ul{
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
-    border-left: 10px solid black;
+    border-left: 8px solid black;
     border-bottom: 5px solid transparent;
 }
 
@@ -239,8 +243,9 @@ ul{
     
     /* 	main navigation */
     .main-menu {
-	    position: absolute;
-	    top: 40vh;
+	    position: relative;
+	    width: 100%;
+	    top: 0;
 	    left: 0;
 	    margin: 0;
 	    z-index: 9999;
@@ -248,7 +253,7 @@ ul{
 	}
     
     .main-menu ul {
-        background-color: #f58122;
+        background-color: #3fb871;
         color: black;
         position: static;
     }
@@ -261,10 +266,14 @@ ul{
         text-align: center;
     }
     
-    .main-menu a {
-        border-bottom: solid 1px gray;
+    .main-menu ul a {
+        border-bottom: solid 1px #ffffff30;
     }
     
+	/*#mm-btn-close {
+		border-bottom: 0;
+	}*/
+
     #mm-toggle ul {
         flex-direction: column;
         display: none;
@@ -279,8 +288,10 @@ ul{
     }
     
     #mm-toggle:target > ul {
-        display: block;
-    }
+	    display: block;
+	    position: absolute;
+	    width: 106.7%;
+	}
     
     #mm-toggle:target #mm-btn-open {
         display: none;
