@@ -810,7 +810,7 @@ color: #aaa;
 }
 
 /* MENU */
-.gs-navigation {
+/*.gs-navigation {
     background: #3fb871;
 }
 
@@ -899,10 +899,10 @@ color: #aaa;
     -webkit-transition:color 0.3s ease-out;
     -o-transition:color 0.3s ease-out;
     transition:color 0.3s ease-out;
-}
+}*/
 
 /* SUB SUB LIST */
-.gs-navigation__sub-sub-menu {
+/*.gs-navigation__sub-sub-menu {
     list-style: none;
     margin: 0;
     position: absolute;
@@ -931,7 +931,7 @@ color: #aaa;
     opacity: 1;
     left: 160px;
     visibility: visible;
-}
+}*/
 
 /* END MENU */
 

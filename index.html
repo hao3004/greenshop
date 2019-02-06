@@ -113,16 +113,138 @@
 				</div>
 			</div>
 		</nav> -->
-		<nav class="clearfix">
-			<ul class="clearfix">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">How-to</a></li>
-				<li><a href="#">Icons</a></li>
-				<li><a href="#">Design</a></li>
-				<li><a href="#">Web 2.0</a></li>
-				<li><a href="#">Tools</a></li>	
-			</ul>
-			<a href="#" id="pull">Menu</a>
+		<!-- <nav class="clear-fix gs-navigation">
+			<div class="container">
+						<a href="#" id="pull"> -->
+							<!-- <i class="fas fa-bars"></i> -->
+						<!-- </a>
+				<ul class="clearfix">
+					<li>
+						<a href="#" >
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Giới thiệu</a></li>
+					<li><a href="#">Sản phẩm</a></li>
+					<li><a href="#">Sản phẩm mới</a></li>
+					<li><a href="#">Tin tức</a></li>
+					<li><a href="#">Liên hệ</a></li>	
+				</ul>
+			</div>
+			
+		</nav> -->
+		<!-- <nav class="gs-navigation">
+			<div class="container">
+				<div id="mm-toggle">
+					<a href="#mm-toggle" id="mm-btn-open">Menu</a>
+			        <a href="#close-menu" id="mm-btn-close">Fechar</a>
+			        <ul>
+			            <li><a href="#">Home</a></li>
+			            <li>
+			                <a href="#">Revista Digital</a>
+			                <ul>
+			                    <li>
+			                        <a href="#">Primeira edição</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                    <li>
+			                        <a href="#">Segunda edição</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                                <ul>
+			                                    <li><a href="#">teste 1</a></li>
+			                                </ul>
+			                            </li>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                    <li>
+			                        <a href="#">Terceira edição</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                </ul>
+			            </li>
+			            <li><a href="#">Fotos</a></li>
+			            <li><a href="#">Vídeos</a></li>
+			            <li><a href="#">Sobre Nós</a></li>
+			            <li><a href="#">Contato</a></li>
+			        </ul>
+			    </div>
+			</div>
+		</nav> -->
+		<nav class="gs-navigation">
+			<div class="main-menu container">
+			    <div id="mm-toggle">
+			        <a href="#mm-toggle" id="mm-btn-open">Menu</a>
+			        <a href="#close-menu" id="mm-btn-close">Fechar</a>
+			        <ul>
+			            <li><a href="#">Home</a></li>
+			            <li>
+			                <a href="#">Revista Digital</a>
+			                <ul>
+			                    <li>
+			                        <a href="#">Primeira edição</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                    <li>
+			                        <a href="#">Segunda edição</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                                <ul>
+			                                    <li><a href="#">teste 1</a></li>
+			                                </ul>
+			                            </li>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                    <li>
+			                        <a href="#">Terceira edição</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                            <li>
+			                                <a href="#">teste 1</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                </ul>
+			            </li>
+			            <li><a href="#">Fotos</a></li>
+			            <li><a href="#">Vídeos</a></li>
+			            <li><a href="#">Sobre Nós</a></li>
+			            <li><a href="#">Contato</a></li>
+			        </ul>
+			    </div>
+			</div>
 		</nav>
 		<section class="gs-sliders">
 			<div id="carouselExampleIndicators" class="carousel slide gs-sliders__imgs" data-ride="carousel">
@@ -997,20 +1119,31 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-        	$(function() {
-				var pull = $('#pull');
-				menu = $('nav ul');
-				menuHeight = menu.height();
-			    $(pull).on('click', function(e) {
-				    e.preventDefault();
-				    menu.slideToggle();
-			    });
-			    $(window).resize(function(){
-		    		var w = $(window).width();
-		    		if(w > 320 && menu.is(':hidden')) {
-		    			menu.removeAttr('style');
-		    		}
-			  	});
+   //      	$(function() {
+			// 	var pull = $('#pull');
+			// 	menu = $('nav ul');
+			// 	menuHeight = menu.height();
+			//     $(pull).on('click', function(e) {
+			// 	    e.preventDefault();
+			// 	    menu.slideToggle();
+			//     });
+			//     $(window).resize(function(){
+		 //    		var w = $(window).width();
+		 //    		if(w > 320 && menu.is(':hidden')) {
+		 //    			menu.removeAttr('style');
+		 //    		}
+			//   	});
+			// });
+
+			//applying arrows that indicates nested items
+			$('#mm-toggle > ul > li').has("ul").addClass("has-sub");
+			$('#mm-toggle ul li:not(.has-sub)').has("ul").addClass("has-inner-sub");
+
+			// required only for mobile version
+			$('#mm-toggle li.has-inner-sub, #mm-toggle li.has-sub').on('click', function(event) {
+			    event.preventDefault();
+			    event.stopPropagation();
+			    $(this).children('ul').toggleClass('show');
 			});
         </script>
 	</body>
