@@ -40,7 +40,7 @@ input {
     outline: none;
 }
 
-.social-media, .time-opening, .authentication, 
+.time-opening, 
 .footer-col__item,
 .footer-shortcuts, .footer-payment-cards,
 .gs-breadcrumb,
@@ -54,18 +54,23 @@ input {
     margin: 0;
 }
 
-.authentication {
+.authentication-wrap {
     text-align: right;
-    display: block;
+}
+
+/* .authentication {
+    display: inline-flex;
+    list-style: none;
+    margin: 0 3.2rem;
 }
 
 .authentication li {
-    padding: 8px;
-}
+    padding: 6px;
+} */
 
 .authentication__login, .authentication__signin {
     color: #898989;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .authentication__login i {
@@ -73,26 +78,35 @@ input {
 }
 
 .product-item__info {
-    padding: 30px 0;
+    padding: 23px 0;
 }
 
 .product-item__rating {
     list-style: none;
-    margin: 7px 0;
+    margin: 8px 0 7px;
 }
 
 .time-opening {
     display: inline-block;
+    word-spacing: 2px;
 }
 
 .time-opening span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.4px;
 }
 
-.social-media li, 
+.time-opening i {
+    font-size: 1rem;
+}
+
+.social-media {
+    display: inline-flex;
+    list-style: none;
+    margin: 0 3.2rem;
+}
+ 
 .product-item__rating li,
-.authentication li,
 .footer-shortcuts li,
 .footer-payment-cards li,
 .gs-breadcrumb li ,
@@ -103,22 +117,29 @@ input {
 }
 
 .social-media li {
-    border: solid #2b2b2b;
-    border-top: 0;
-    border-bottom: 0;
-    padding: 7px 9px;
+    border: 0;
+    padding: 7px 13px;
     margin: 0;
-    border-left: 1px;
+    border-left: 1px solid #2b2b2b;
+}
+
+.social-media li:last-child {
+    border-right: 1px solid #2b2b2b;
 }
 
 .social-media li a {
     color: #898989;
 }
 
+.social-media li a i,
+.authentication a i {
+    font-size: 1rem;
+}
+
 .gs-header__main {
     background: url('./../images/bg-header-plus-tree.jpg');
     background-position: center;
-    padding: 20px 0;
+    padding: 18px 0 24px;
 }
 
 .logo {
@@ -129,7 +150,7 @@ input {
     color: #7d7d7d;
     font-size: 1.4rem;
     text-transform: uppercase;
-    margin: 11px 42px;
+    margin: 12px 25px 8px;
     line-height: 20px;
 }
 
@@ -145,8 +166,8 @@ form.search {
     position: relative;
     line-height: 27px;
     padding: 8px 28px;
-    width: calc(100% - 135px);
-    margin: 0 13px;
+    width: calc(100% - 150px);
+    margin: 0;
 }
 
 .search ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -176,18 +197,19 @@ form.search {
 
 .search button[type="submit"] {
     position: absolute;
-    top: 5px;
-    right: 15px;
+    top: 10px;
+    right: 20px;
     background: transparent;
     border: none;
     color: #898989;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 a.cart-btn {
-    text-align: right;
     color: #202020;
-    font-size: 1.5rem;
+    font-size: 1.34rem;
+    word-spacing: 3px;
+    padding: 5px;
 }
 
 a.cart-btn i {
@@ -259,7 +281,7 @@ a.cart-btn i {
 .product-item__btns {
     width: 100%;
     position: absolute;
-    top: 47%;
+    top: 45%;
     z-index: 4;
     text-decoration: none;
     color: white;
@@ -302,7 +324,7 @@ a.cart-btn i {
 .product-item__title {
     color: #555555;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.6rem;
 }
 
 .gs-field--col-left .product-item__title {
@@ -341,7 +363,7 @@ span.product-item__price del {
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
     font-size: 1.6rem;
-    margin: 22px 0 10px;
+    margin: 19px 0 24px;
 }
 
 .gs-field__title:after {
@@ -1449,10 +1471,56 @@ color: #aaa;
     position: absolute;
     text-align: center;
     left: 0;
-    top: 20%;
+    top: 19%;
     width: 100%;
 }
 
 .product-imgs .slick-slide img {
     width: 100%;
+}
+
+.gs-title a {
+    color: #fff;
+    font-size: 6.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    display: block;
+}
+
+.gs-sliders__content span {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: block;
+    margin: 14px 0;
+}
+
+.gs-sliders .carousel-indicators {
+    bottom: 25px;
+}
+
+.gs-sliders .carousel-indicators li {
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.gs-sliders .carousel-indicators li.active {
+    background-color: #3fb871;
+}
+
+/* .gs-field__product-slides .product-item-group {
+    margin: 10px;
+} */
+
+.gs-field__product-slides .product-item-group {
+    margin: 0 10px;
+}
+
+/* the parent */
+.gs-field__product-slides {
+    margin: 0 -10px;
 }
