@@ -1584,3 +1584,23 @@ color: #aaa;
 .footer-cards.social-media li a i {
     font-size: 2rem;
 }
+
+.gs-field__product-slides .slick-next::before {
+    content: "";
+}
+
+.gs-field__slide-btn {
+    display: inline-block;
+    position: absolute;
+    top: 4.5rem;
+    right: 1.7rem;
+}
+
+.gs-field__slide-btn i {
+    color: #131212;
+    font-size: .6rem;
+    padding: 7px 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    cursor: pointer;
+}

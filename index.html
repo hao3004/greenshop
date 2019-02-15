@@ -559,7 +559,14 @@
 					<div class="col-md-9">
 						<section class="gs-field gs-field--custom">
 							<h3 class="gs-field__title">Sản phẩm khuyến mại</h3>
-							
+							<div class="gs-field__slide-btn">
+								<a id="gs-field__slide-btn--prev">
+									<i class="fas fa-less-than"></i>
+								</a>
+								<a id="gs-field__slide-btn--next">
+									<i class="fas fa-greater-than"></i>
+								</a>
+							</div>
 							<div class="gs-field__product-slides">
 								<div class="product-item-group">
 									<div class="product-item">
@@ -1251,7 +1258,9 @@
 					slidesToShow: 3,
 					slidesToScroll: 3,
 					centerPadding: '10',
-				});		
+					prevArrow: $('#gs-field__slide-btn--prev'),
+					nextArrow: $('#gs-field__slide-btn--next')
+				});
             });
         </script>
 	</body>
