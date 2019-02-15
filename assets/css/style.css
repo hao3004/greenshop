@@ -610,7 +610,9 @@ span.product-item__price del {
 
 .product-list__paginations {
     float: right;
+    margin: 4rem 0 10.5rem;
 }
+
 /* Cart */
 .gs-cart__options {
     text-align: right;
@@ -1353,7 +1355,6 @@ color: #aaa;
 }
 
 .gs-sidebar__news__title {
-    color: #898989;
     font-size: 1.2rem;
     line-height: 18px;
 }
@@ -1363,7 +1364,7 @@ color: #aaa;
 }
 
 .gs-news {
-    padding: 30px 0;
+    padding: 30px 0 12px;
 }
 
 .gs-news__title {
@@ -1731,4 +1732,28 @@ a.gs-login__forget-password {
     font-weight: 300;
     margin-left: 23px;
     text-decoration: underline;
+}
+
+.gs-sidebar .gs-field__title {
+    margin: 19px 0;
+}
+
+.gs-sidebar__list li {
+    padding: 8px 0 9px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.gs-sidebar__news .news-item {
+    padding: 9px 0;
+}
+
+.gs-sidebar .gs-field__title--blog-tag {
+    margin: 0px;
+}
+
+p.gs-news__excerpt {
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #898989;
+    margin: 28px 0 8px;
 }
