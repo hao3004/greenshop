@@ -445,8 +445,16 @@ span.product-item__price del {
 }
 
 .footer-contact__description {
-    margin-top: 11px;
+    margin: 25px 0;
     line-height: 22px;
+}
+
+.footer-contact__info li {
+    margin: 10px 0;
+}
+
+.footer-contact__info, .footer-contact__description {
+    color: #898989;
 }
 
 .footer-col__item i {
@@ -740,6 +748,10 @@ input[type="checkbox"] {
     width: 100%;
 }
 
+.gs-login__form.gs-register__form .form-group textarea {
+    border: 1px solid #ebebeb;
+}
+
 .gs-register__form label {
     display: block;
     color: #898989;
@@ -752,6 +764,7 @@ input[type="checkbox"] {
     color: #363636;
     padding: 9px;
     margin: 3px 0;
+    border: 1px solid #ebebeb;
 }
 
 .gs-login__form input:not([type="submit"]) {
@@ -1662,4 +1675,16 @@ color: #aaa;
 
 .gs-produts-wrap {
     padding-bottom: 18.7rem;
+}
+
+.gs-map {
+    padding: 5.7rem 0 3.9rem;
+}
+
+.footer-contact {
+    padding: 4.7rem 0 0 3.8rem;
+}
+
+.gs-contact {
+    padding-bottom: 15.1rem;
 }
