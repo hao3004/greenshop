@@ -1531,6 +1531,15 @@ color: #aaa;
     margin: 0 -10px;
 }
 
+._gs-field__product-slides .product-item-group {
+    margin: 0 10px;
+}
+
+/* the parent */
+._gs-field__product-slides {
+    margin: 0 -10px;
+}
+
 .gs-field--col-left .product-item--custom:first-child {
     margin-top: 40px;
 }
@@ -1596,11 +1605,27 @@ color: #aaa;
     right: 1.7rem;
 }
 
-.gs-field__slide-btn i {
+.gs-field--new-products ._gs-field__slide-btn {
+    display: inline-block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+}
+
+.gs-field__slide-btn i,
+._gs-field__slide-btn i {
     color: #131212;
     font-size: .6rem;
     padding: 7px 8px;
     border: 1px solid #e1e1e1;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.gs-field--new-products {
+    position: relative;
+}
+
+.gs-field__title-cus {
+    margin: 26px 0 23px;
 }
