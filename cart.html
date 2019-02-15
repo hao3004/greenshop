@@ -1,5 +1,4 @@
 <!doctype html>
-<!doctype html>
 <html lang="en">
 	<head>
 		<title>Green Shop</title>
@@ -13,105 +12,120 @@
 		<meta name="keywords" content="sell, buy trees">
 		<link rel="icon" type="image/png" href="assets/images/favicon.png">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/libs/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/menu.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
-    <body>
+	</head>
+	<body>
 		<header id="gs-header" class="gs-header">
-            <div class="gs-header__top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-left">
-                            <div class="time-opening">
-                                <i class="far fa-clock"></i>
-                                <span>Open time: 8:00 - 18:00 Monday - Sunday</span>
-                            </div>
-                            <ul class="social-media">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
-                                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="authentication">
-                                <li><a href="#" class="authentication__login"><i class="fas fa-user"></i>Đăng nhập</a></li>
-                                <li><a href="#" class="authentication__signin"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gs-header__main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1 class="logo">
-                                <img src="assets/images/logo.png" alt="logo">
-                            </h1>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="hotline">
-                                <i class="fas fa-phone"></i>
-                                <span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
-                            </div>
-                            <form class="search">
-                                <input type="text" placeholder="Tìm kiếm" id="keywords"	name="keywords" class="search_input"/>
-                                <button type="submit"><i class="fas fa-search"></i></button>
-                            </form>
-                            <a href="#" class="cart-btn">
-                                <i class="fas fa-shopping-basket"></i>
-                                <span>0 Sản phẩm</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <nav class="gs-navigation">
-            <div class="container">
-                <!-- GENERAL MENU -->
-                <ul id="menu" class="gs-navigation__menu">
-                    <li>
-                        <a href="#" class="btn" id="gs-navigation__toggle-btn"><i class="fas fa-bars"></i></a>
-                    </li>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Sản phẩm<i class="fas fa-angle-down"></i></a>
-                        <ul class="gs-navigation__sub-menu">
-                            <li><a href="#">Cây chậu treo</a></li>
-                            <li><a href="#">Cây có hoa<i class="fas fa-angle-right"></i></a>
-                                <ul class="subsublist gs-navigation__sub-sub-menu">
-                                    <li><a href="#">Cây có hoa tím</a></li>
-                                    <li><a href="#">Cây có hoa đỏ</a></li>
-                                    <li><a href="#">Cây có hoa xanh</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Cây dây leo</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Sản phẩm mới<i class="fas fa-angle-down"></i></a>
-                        <ul class="gs-navigation__sub-menu">
-                            <li><a href="#">Best Sellers</a></li>
-                            <li><a href="#">Cây mới trong tháng</a></li>
-                            <li><a href="#">Cây mới trong tuần</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                </ul>
-                <!-- MENU FOR MOBILE -->
-                <div id="gs-navigation__menu--mobile-overlay" style="background: teal; display: none">
-                    <ul id="gs-navigation__menu--mobile">
-                        <li><a href="#">Sub link</a></li>
-                        <li><a href="#">Sub link</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+			<div class="gs-header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 text-left">
+							<div class="time-opening">
+								<i class="far fa-clock"></i>
+								<span>Open time: 8:00 - 18:00 Monday - Sunday</span>
+							</div>
+							<ul class="social-media">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+								<li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+								<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="authentication-wrap">
+								<ul class="authentication social-media">
+									<li><a href="./login.html" class="authentication__login"><i class="fas fa-user"></i>Đăng nhập</a></li>
+									<li><a href="./register.html" class="authentication__signin"><i class="fas fa-user-plus"></i>Đăng ký</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gs-header__main">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1 class="logo">
+								<a href="#">
+									<img src="assets/images/logo.png" alt="logo">
+								</a>
+							</h1>
+						</div>
+						<div class="col-md-6">
+							<div class="hotline">
+								<i class="fas fa-phone"></i>
+								<span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
+							</div>
+							<form class="search">
+								<input type="text" placeholder="Tìm kiếm" id="keywords"	name="keywords" class="search_input"/>
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</form>
+							<a href="./cart.html" class="cart-btn">
+								<i class="fas fa-shopping-basket"></i>
+								<span>0 Sản phẩm</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="gs-navigation">
+			<div class="main-menu container">
+			    <div id="mm-toggle">
+			        <a href="#mm-toggle" id="mm-btn-open"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			        <!-- <a href="#close-menu" id="mm-btn-close">Fechar</a> -->
+			        <ul>
+						<li class="main-menu__bar-icon">
+							<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						</li>
+			            <li><a href="#">Trang chủ</a></li>
+			            <li>
+			                <a href="#">Giới thiệu</a>
+			            </li>
+			            <li>
+			            	<a href="./products.html">Sản phẩm</a>
+			                <ul>
+			                    <li>
+			                        <a href="#">Cây chậu treo</a>
+			                    </li>
+			                    <li>
+			                        <a href="#">Cây có hoa</a>
+			                        <ul>
+			                            <li>
+			                                <a href="#">Hoa trang trí</a>
+			                                <ul>
+			                                    <li><a href="#">Decor nội thất</a></li>
+			                                </ul>
+			                            </li>
+			                            <li>
+			                                <a href="#">Hoa lấy thuốc</a>
+			                            </li>
+			                        </ul>
+			                    </li>
+			                </ul>
+			            </li>
+			            <li>
+			            	<a href="./products.html">Sản phẩm mới</a>
+							<ul>
+			                    <li>
+			                        <a href="#">Cheapest products</a>
+			                    </li>
+			                </ul>
+			            </li>
+			            <li><a href="./news.html">Tin tức</a></li>
+			            <li><a href="./contact.html">Liên hệ</a></li>
+			        </ul>
+			    </div>
+			</div>
+		</nav>
         <div class="gs-produts-wrap">
             <div class="container">
                 <ul class="gs-breadcrumb">
@@ -144,7 +158,7 @@
                                         <span>270.000 đ</span>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__quantity">35</span>
+                                        <span class="gs-cart-product__quantity" contenteditable contenteditable>35</span>
                                     </td>
                                     <td>
                                         <span>270.000 đ</span>
@@ -164,7 +178,7 @@
                                         <span>270.000 đ</span>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__quantity">35</span>
+                                        <span class="gs-cart-product__quantity" contenteditable>35</span>
                                     </td>
                                     <td>
                                         <span>270.000 đ</span>
@@ -184,7 +198,7 @@
                                         <span>270.000 đ</span>
                                     </td>
                                     <td>
-                                        <span class="gs-cart-product__quantity">35</span>
+                                        <span class="gs-cart-product__quantity" contenteditable>35</span>
                                     </td>
                                     <td>
                                         <span>270.000 đ</span>
@@ -229,10 +243,140 @@
                                 </tr>
                             </tfoot>
                         </table>
-                        <a href="#" class="btn btn-success gs-cart-payment__btn">Thanh toán</a>
+                        <a href="#" class="btn btn-success gs-cart-payment__btn gs-cart__options-btn--cont">Thanh toán</a>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
+        <footer id="gs-footer">
+			<div class="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="gs-social-media">
+								<h3 class="gs-footer__title">Kênh thông tin từ chúng tôi</h3>
+								<ul class="social-media">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="gs-subscribe">
+								<h3 class="gs-subscribe__title gs-footer__title">Đăng ký nhận <br/>email từ chúng tôi</h3>
+								<form class="gs-subscribe__form">
+									<input type="email"/>
+									<button class="btn btn-lg btn-success gs-subscribe__form__btn" type="submit"><i class="fab fa-telegram-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="footer-contact">
+								<img src="assets/images/logo.png" alt="footer-contact__logo" class="footer-contact__logo"/>
+								<p class="footer-contact__description gs-footer-text">
+									Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển.
+								</p>
+								<ul class="footer-contact__info gs-footer-text footer-col__item">
+									<li class="footer-contact__tel">
+										<i class="fas fa-mobile-alt"></i>Điện thoại : (84-4) 66.558.868
+									</li>
+									<li class="footer-contact__email">
+										<i class="far fa-envelope"></i>
+										Email: <a href="mailto:info@dkt.com.vn?subject=FROM+Jōnetsu+BLOG" class="gs-footer-text">info@dkt.com.vn</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="footer-col-wrap">
+								<div class="footer-col">
+									<h3 class="gs-footer__title">Thông tin khách hàng</h3>
+									<ul class="footer-col__item">
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Tài khoản của tôi</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Sản phẩm yêu thích</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Lịch sử mua hàng</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Chính sách đổi trả</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Góp ý khiếu nại</a></li>
+									</ul>
+								</div>
+								<div class="footer-col">
+									<h3 class="gs-footer__title">Hỗ trợ dịch vụ</h3>
+									<ul class="footer-col__item">
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Hệ thống cửa hàng</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Hướng dẫn mua hàng</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Hướng dẫn thanh toán</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Tích điểm đổi quà</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Câu hỏi thường gặp</a></li>
+									</ul>
+								</div>
+								<div class="footer-col">
+									<h3 class="gs-footer__title">Chính sách ưu đãi</h3>
+									<ul class="footer-col__item">
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Chính sách giao hàng</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Chính sách đổi trả sản phẩm</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Chính sách bảo hành</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Giới thiệu sản phẩm mới</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Chính sách trả góp</a></li>
+									</ul>
+								</div>
+								<div class="footer-col">
+									<h3 class="gs-footer__title">Tin tức</h3>
+									<ul class="footer-col__item">
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Tin mới</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Khuyến mại</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Tuyển dụng</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Download</a></li>
+										<li><a href="#" class="gs-footer-text"><i class="fas fa-greater-than"></i>Tags</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<ul class="footer-shortcuts">
+								<li><a href="#" class="gs-footer-text">Sitemap</a></li>
+								<li><a href="#" class="gs-footer-text">Danh mục sản phẩm</a></li>
+								<li><a href="#" class="gs-footer-text">Hợp tác</a></li>
+								<li><a href="#" class="gs-footer-text">Thông tin liên hệ</a></li>
+								<li><a href="#" class="gs-footer-text">Câu hỏi thường gặp</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<ul class="social-media footer-cards">
+								<li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fab fa-cc-paypal"></i></i></a></li>
+								<li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<span>Thiết kế bởi Bizweb<!---->&copy;</span>
+			</div>
+		</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/slide.js"></script>
     </body>
 </html>
