@@ -227,7 +227,7 @@ a.cart-btn i {
 }
 
 .gs-main {
-    padding: 30px;
+    padding: 30px 0 26px;
 }
 
 .product-item {
@@ -357,13 +357,13 @@ span.product-item__price del {
 
 .gs-field__title {
     position: relative;
-    line-height: 40px;
+    line-height: 44px;
     border-bottom: 1px solid #e1e1e1;
     color: #3fb871;
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
     font-size: 1.6rem;
-    margin: 19px 0 24px;
+    margin: 11px 0 23px;
 }
 
 .gs-field__title:after {
@@ -404,7 +404,7 @@ span.product-item__price del {
 }
 
 .product-item--custom {
-    padding: 15px;
+    padding: 19px;
     margin: 0;
 }
 
@@ -423,15 +423,20 @@ span.product-item__price del {
     text-transform: uppercase;
     font-family: Arial;
     font-weight: 600;
+    line-height: 25px;
+}
+
+.footer-col .gs-footer__title {
+    display: block;
 }
 
 .main-footer .footer-col .gs-footer__title {
     color: #3fb871;
-    margin: 24px 0 12px;
+    margin: 20px 0 10px;
 }
 
 .footer-col__item li {
-    margin: 19px 0;
+    margin: 8px 0;
 }
 
 .gs-footer-text {
@@ -440,8 +445,8 @@ span.product-item__price del {
 }
 
 .footer-contact__description {
-    margin: 13px 0 18px;
-    line-height: 23px;
+    margin-top: 11px;
+    line-height: 22px;
 }
 
 .footer-col__item i {
@@ -460,13 +465,13 @@ span.product-item__price del {
 }
 
 .gs-subscribe {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .gs-subscribe__form {
     display: inline-block;
     float: right;
-    width: calc(100% - 240px);
+    width: calc(100% - 235px);
 }
 
 .gs-subscribe__form input {
@@ -478,7 +483,7 @@ span.product-item__price del {
 }
 
 .gs-subscribe__form input {
-    width: 90%;
+    width: 89%;
     background: #fff;
     font-size: 1.5rem;
     border: none;
@@ -487,9 +492,9 @@ span.product-item__price del {
 }
 
 .gs-subscribe__form__btn {
-    width: 10%;
+    width: 11%;
     float: right;
-    padding: 10px;
+    padding: 9px;
     border: none;
     border-radius: 0;
 }
@@ -499,11 +504,11 @@ span.product-item__price del {
 }
 
 .sub-footer {
-    padding: 40px 0 20px;
+    padding: 34px 0 20px;
 }
 
 .bottom-footer {
-    padding: 27px 0 22px;
+    padding: 24px 0 18px;
 }
 
 /* FOOTER */
@@ -517,7 +522,7 @@ span.product-item__price del {
     border: 2px solid #494949;
     border-left: 0;
     border-right: 0;
-    padding: 40px 0;
+    padding: 35px 0 45px;
 }
 
 .footer-copyright {
@@ -527,6 +532,7 @@ span.product-item__price del {
     font-size: 1.4rem;
     word-spacing: 1px;
     padding: 12px;
+    font-weight: 400;
 }
 
 /* news */
@@ -540,7 +546,7 @@ span.product-item__price del {
     font-style: italic;
     font-size: 1.2rem;
     display: inline-block;
-    margin: 25px 0 17px;
+    margin: 14px 0 17px;
 }
 
 .news-item__title {
@@ -552,8 +558,8 @@ span.product-item__price del {
 .news-item__excerpt {
     color: #898989;
     font-size: 1.2rem;
-    margin: 10px 0 13px;
-    line-height: 21px;
+    margin: 7px 0 14px;
+    line-height: 20px;
 }
 
 .news-item__see-more {
@@ -967,7 +973,7 @@ color: #aaa;
 }
 
 .gs-advertising {
-    padding: 33px 0;
+    padding-bottom: 31px;
 }
 
 .gs-sidebar__list.product-colors li {
@@ -1523,4 +1529,58 @@ color: #aaa;
 /* the parent */
 .gs-field__product-slides {
     margin: 0 -10px;
+}
+
+.gs-field--col-left .product-item--custom:first-child {
+    margin-top: 40px;
+}
+
+.product-item-group .product-item:nth-child(2) {
+    margin-bottom: 0;
+}
+
+/* .sub-footer .social-media {
+    display: block;
+} */
+
+.sub-footer .social-media {
+    margin: 0;
+}
+
+.footer-cards {
+    float: right;
+    margin: 0;
+}
+
+.sub-footer .social-media li,
+.footer-cards li {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 25px;
+}
+
+.footer-cards li {
+    margin-right: 15px;
+}
+
+.footer-cards li:last-child {
+    margin-right: 0;
+}
+
+.sub-footer .social-media li a i {
+    font-size: 1.4rem;
+}
+
+.footer-col-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col .footer-col__item li {
+    margin: 16px 0;
+}
+
+.footer-cards.social-media li a i {
+    font-size: 2rem;
 }
