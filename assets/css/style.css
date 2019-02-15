@@ -684,6 +684,12 @@ span.product-item__price del {
     background: #fff;
     border-radius: 20px;
     border: 1px solid #3fb871;
+    transition: .2s;
+}
+
+.gs-form__btn--reverse:hover {
+    color: #fff;
+    background: #3fb871;
 }
 
 .gs-register__form .gs-form__btn--reverse,
@@ -775,7 +781,7 @@ input[type="checkbox"] {
 
 .gs-register__form .gs-register__form--hasSubscribe {
     width: 100%;
-    margin: 23px 0 58px;
+    margin: 35px 0 58px;
 }
 
 .gs-register__form-btns {
@@ -1689,14 +1695,14 @@ color: #aaa;
 }
 
 .gs-produts-wrap {
-    padding-bottom: 18.7rem;
+    padding-bottom: 7.2rem;
 }
 
 .gs-map {
     padding: 5.7rem 0 3.9rem;
 }
 
-.footer-contact {
+.gs-contact .col-md-6 .footer-contact {
     padding: 4.7rem 0 0 3.8rem;
 }
 
