@@ -754,8 +754,8 @@ input[type="checkbox"] {
 
 .gs-register__form label {
     display: block;
-    color: #898989;
-    font-size: 1.2rem;
+    color: #040404;
+    font-size: 1.1rem;
 }
 
 .gs-register__form input:not([type="submit"]) {
@@ -1465,6 +1465,20 @@ color: #aaa;
     margin-top: 4.2rem;
 }
 
+.gs-login .gs-register__title {
+    margin-top: 6rem;
+}
+
+.gs-login .gs-footer-text {
+    font-size: 1.1rem;
+}
+
+.gs-login .gs-footer-text {
+    font-size: 1.1rem;
+    margin: 15px 0 29px;
+    line-height: 20px;
+}
+
 .gs-map iframe {
     min-height: 450px;
 }
@@ -1687,4 +1701,34 @@ color: #aaa;
 
 .gs-contact {
     padding-bottom: 15.1rem;
+}
+
+.gs-main-cus {
+    padding: 0;
+}
+
+.gs-login__form .gs-register__title {
+    margin: 6rem 0 3.2rem;
+}
+
+.gs-login__form .gs-login-options {
+    margin: 3.9rem 0 2.3rem;
+}
+
+a.btn.btn-success.gs-form__btn {
+    padding: 1rem 4rem;
+}
+
+.gs-login {
+    padding-bottom: 11rem;
+}
+
+a.gs-login__forget-password {
+    color: #898989;
+    font-style: italic;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-left: 23px;
+    text-decoration: underline;
 }
