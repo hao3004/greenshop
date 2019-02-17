@@ -1,6 +1,6 @@
 $(document).ready(function(){
-// MENU
-//applying arrows that indicates nested items
+    // MENU
+    //applying arrows that indicates nested items
     $('#mm-toggle > ul > li').has("ul").addClass("has-sub");
     $('#mm-toggle ul li:not(.has-sub)').has("ul").addClass("has-inner-sub");
 
@@ -10,4 +10,9 @@ $(document).ready(function(){
         event.stopPropagation();
         $(this).children('ul').toggleClass('show');
     });
+
+    // $('.social-btns__share').tooltip({
+    //     trigger: 'manual'
+    // })
+    // .tooltip('show');
 });

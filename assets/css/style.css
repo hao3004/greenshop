@@ -1084,7 +1084,7 @@ color: #aaa;
 }
 
 .product-info {
-    padding: 14px;
+    padding: 12px 0;
 }
 
 .product-info .product-item__rating li i {
@@ -1092,7 +1092,7 @@ color: #aaa;
 }
 
 .product-info .product-item__rating {
-    margin: 12px 0;
+    margin: 9px 0;
 }
 
 .product-info .product-item__price {
@@ -1112,7 +1112,7 @@ color: #aaa;
 }
 
 .product-info__quantity {
-    padding: 24px 0;
+    padding: 18px 0 23px;
     color: #363533;
     font-size: 1.4rem;
     border: 1px solid #e6e6e6;
@@ -1203,7 +1203,7 @@ color: #aaa;
 } 
 
 .product-detail-tab__content {
-    padding: 4.8rem 4.2rem;
+    padding: 3.8rem 4.2rem;
     color: #7d7d7d;
     font-size: 1.2rem;
 }
@@ -1807,4 +1807,118 @@ p.gs-news__excerpt {
     width: 73%;
     background: #fff;
     border: 1px solid #ebebeb;
+}
+
+[tooltip]{
+    position:relative;
+    display:inline-block;
+}
+
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: #898989cc transparent transparent transparent;
+    z-index: 99;
+    opacity:1;
+}
+
+[tooltip-position='right']::before{
+    left:100%;
+    top:50%;
+    margin-left:1px;
+    transform:translatey(-50%) rotate(90deg)
+}
+
+[tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left:50%;
+    top:-6px;
+    transform: translateX(-50%)   translateY(-100%);
+    background: #fff;
+    text-align: center;
+    color: #898989cc;
+    padding: 4px 2px;
+    font-size: 12px;
+    border: 1px solid #898989cc;
+    border-radius: none;
+    pointer-events: none;
+    padding: 0px 7px;
+    z-index: 99;
+}
+
+[tooltip-position='right']::after{
+    left:100%;
+    top:50%;
+    margin-left:8px;
+    transform: translateX(0%)   translateY(-50%);
+}
+
+.social-btns a {
+    margin: 0 32px 0 0;
+    padding: 0px 3px;
+}
+
+.social-btns a:nth-child(2) {
+    margin-right: 0;
+}
+
+.social-btns a:nth-child(3) {
+    margin-right: 64px;
+}
+
+.social-btns a i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.social-btns a i.fa-twitter {
+    font-size: 1.3rem;
+}
+
+.social-btns a:first-child {
+    margin-left: 0;
+    background: #5877d1;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.social-btns a:nth-child(3) {
+    background: #fff;
+    color: red;
+    border: 1px solid #ebebeb;
+}
+
+/* the parent */
+.gs-slider-nav {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.gs-slider-nav .draggable {
+    padding: 0 !important;
+}
+
+
+.gs-slider-nav .slick-slide {
+    width: 18% !important;
+    margin: 5.5px;
+}
+
+.gs-slider-nav .slick-slide:first-child {
+    margin-left: 0;
+}
+
+.gs-slider-nav .slick-slide:last-child {
+    margin-right: 0;
+}
+
+.product-detail-tab__description {
+    line-height: 34px;
 }
