@@ -1704,15 +1704,15 @@ color: #aaa;
 }
 
 .gs-map {
-    padding: 5.7rem 0 3.9rem;
+    padding: 5.7rem 0 1.9rem;
 }
 
 .gs-contact .col-md-6 .footer-contact {
-    padding: 4.7rem 0 0 3.8rem;
+    padding: 6.7rem 0 0 3.8rem;
 }
 
 .gs-contact {
-    padding-bottom: 15.1rem;
+    padding-bottom: 8rem;
 }
 
 .gs-main-cus {
@@ -1721,6 +1721,10 @@ color: #aaa;
 
 .gs-login__form .gs-register__title {
     margin: 6rem 0 3.2rem;
+}
+
+.gs-contact .gs-login__form .gs-register__title {
+    margin: 6rem 0 0.7rem;
 }
 
 .gs-login__form .gs-login-options {
