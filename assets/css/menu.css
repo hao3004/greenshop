@@ -220,7 +220,6 @@ a.cart-btn.search-btn--mobile:hover form.search.search--mobile {
     }
     
     #mm-toggle:not(:target) #mm-btn-open,
-    #mm-toggle:not(:target) .cart-btn--mobile,
     #mm-toggle:not(:target) .search-btn--mobile {
         display: block;
     }
@@ -268,7 +267,8 @@ a.cart-btn.search-btn--mobile:hover form.search.search--mobile {
 }
 
 @media (max-width: 414px) {
-    form.search.search--mobile {
+    form.search.search--mobile,
+    .cart-btn--mobile {
         display: block;
     }
 }

@@ -22,6 +22,10 @@
     .gs-slider-nav .slick-slide {
         margin: 4.5px;
     }
+
+    .product-item-list-line .product-info__description {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -74,6 +78,20 @@
 
     .gs-slider-nav .slick-slide {
         margin: 3px;
+    }
+
+    #list .product-item-list__img {
+        width: 50%;
+    }
+
+    #list .product-item__info {
+        padding: 15px 0 0 15px;
+        width: 50%;
+    }
+
+    #list .product-info__buynow {
+        display: block;
+        margin-bottom: 8px;
     }
 }
 
@@ -195,5 +213,9 @@
     .tab-pane .gs-news-comment__form input[type="email"], 
     .tab-pane .gs-news-comment__form input[type="tel"] {
         width: 100%;
+    }
+
+    .view-options__form.form-inline, .product-list__style {
+        display: none;
     }
 }
