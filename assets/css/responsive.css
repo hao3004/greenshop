@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+
+    :root {
+        font-size: 9px;
+    }
+
+    .gs-sliders__content img {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+
+    :root {
+        font-size: 10px;
+    }
+    
+    .gs-header__top,
+    .gs-sliders__content,
+    .gs-field__product-slides .product-item__status,
+    ._gs-field__product-slides .product-item__status,
+    .gs-field__product-slides .product-item-group .product-item:last-child,
+    ._gs-field__product-slides .product-item-group .product-item:last-child,
+    .gs-news--home {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+    
+    .product-item--custom {
+        padding: 20px 20px 40px;
+    }
+    
+    .gs-subscribe {
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+
+    .gs-subscribe__title {
+        display: block;
+    }
+    
+    .gs-subscribe__form {
+        width: 100%;
+    }
+
+    .footer-col-wrap {
+        display: block;
+    }
+}
