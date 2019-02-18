@@ -1764,6 +1764,7 @@ a.gs-login__forget-password {
 
 .gs-sidebar__news .news-item {
     padding: 9px 0;
+    clear: both;
 }
 
 .gs-sidebar .gs-field__title--blog-tag {
