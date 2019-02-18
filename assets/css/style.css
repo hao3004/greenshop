@@ -189,12 +189,16 @@ form.search {
 }
 
 .search_input {
-    color: white;
+    color: #333;
     border: 0;
     outline: 0;
     background: transparent;
+    font-size: 1.3rem;
 }
 
+.search--mobile .search_input {
+    color: #fff;
+}
 .search button[type="submit"] {
     position: absolute;
     top: 10px;
