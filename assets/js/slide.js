@@ -43,7 +43,7 @@ $(document).ready(function(){
               slidesToScroll: 1
             }
           }
-      ]
+        ]
     });
     // PRODUCT DETAILS
     $('.gs-slider-for').slick({
