@@ -7,6 +7,10 @@
     .gs-sliders__content img {
         display: none;
     }
+
+    .gs-cart-product-wrap {
+        margin-top: 2.5rem;
+    }
 }
 
 @media (max-width: 414px) {
@@ -49,5 +53,10 @@
 
     .footer-col-wrap {
         display: block;
+    }
+
+    .gs-cart-payment {
+        float: none;
+        width: 100%;
     }
 }

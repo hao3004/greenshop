@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Cart - Green Shop</title>
+		<title>Green Shop</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -59,7 +59,7 @@
 								</a>
 							</h1>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 d-none d-sm-block">
 							<div class="hotline">
 								<i class="fas fa-phone"></i>
 								<span>Hỗ trợ: (04) 6674.2332 - (04) 3786 8504</span>
@@ -81,7 +81,18 @@
 			<div class="main-menu container">
 			    <div id="mm-toggle">
 			        <a href="#mm-toggle" id="mm-btn-open"><i class="fa fa-bars" aria-hidden="true"></i></a>
-			        <!-- <a href="#close-menu" id="mm-btn-close">Fechar</a> -->
+					<!-- <a href="#close-menu" id="mm-btn-close">Fechar</a> -->
+					<!-- <a href="#" class="cart-btn search-btn--mobile">
+						
+					</a> -->
+					<form class="search search--mobile">
+						<input type="text" id="keywords"	name="keywords" class="search_input"/>
+						<i class="fas fa-search"></i>
+						<button type="submit"></button>
+					</form>
+					<a href="./cart.html" class="cart-btn cart-btn--mobile">
+						<i class="fas fa-shopping-basket"></i>
+					</a>
 			        <ul>
 						<li class="main-menu__bar-icon">
 							<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -279,7 +290,7 @@
 			<div class="main-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-3">
 							<div class="footer-contact">
 								<img src="assets/images/logo.png" alt="footer-contact__logo" class="footer-contact__logo"/>
 								<p class="footer-contact__description gs-footer-text">
@@ -296,7 +307,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-8">
+						<div class="col-lg-8 col-md-9">
 							<div class="footer-col-wrap">
 								<div class="footer-col">
 									<h3 class="gs-footer__title">Thông tin khách hàng</h3>
@@ -343,7 +354,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="bottom-footer">
+			<div class="bottom-footer d-none d-sm-block">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10">
@@ -378,5 +389,5 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
         <script type="text/javascript" src="assets/js/slide.js"></script>
-    </body>
+	</body>
 </html>
