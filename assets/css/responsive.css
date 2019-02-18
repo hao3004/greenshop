@@ -59,4 +59,20 @@
         float: none;
         width: 100%;
     }
+
+    .gs-subscribe__title br {
+        display: none;
+    }
+
+    .gs-contact .col-md-6 .footer-contact {
+        padding: 3.8rem 0 0;
+    }
+
+    .gs-contact {
+        padding-bottom: 2rem;
+    }
+
+    .gs-map {
+        padding: 0.7rem 0 0rem;
+    }
 }
