@@ -218,4 +218,14 @@
     .view-options__form.form-inline, .product-list__style {
         display: none;
     }
+
+    .gs-register__form .form-group,
+    .gs-register__form input:not([type="submit"]) {
+        width: 100%;
+    }
+
+    .gs-register__form-btns {
+        text-align: center;
+    }
+
 }
