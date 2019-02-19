@@ -257,7 +257,7 @@ a.cart-btn.search-btn--mobile:hover form.search.search--mobile {
     }
 
     .main-menu li:first-child a {
-        text-align: left;
+        text-align: center;
         padding: 5px;
     }
 
