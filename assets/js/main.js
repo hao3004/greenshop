@@ -1,6 +1,6 @@
-// $(window).on('load',function(){
-//     $('#myModal').modal('show');
-// });
+window.addEventListener('load', function() {
+    $('#myModal').modal('show');
+})
 $(document).ready(function(){
     // MENU
     //applying arrows that indicates nested items
@@ -13,6 +13,4 @@ $(document).ready(function(){
         event.stopPropagation();
         $(this).children('ul').toggleClass('show');
     });
-    
-    // $('#myModal').modal('show');
 });
