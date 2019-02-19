@@ -93,6 +93,14 @@
         display: block;
         margin-bottom: 8px;
     }
+    
+    .gs-model__img {
+        display: none;
+    }
+
+    .gs-model__content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 414px) {
@@ -224,8 +232,15 @@
         width: 100%;
     }
 
+    .gs-model-subscribe__form input:not([type="submit"]) {
+        width: 80%;
+    }
+
     .gs-register__form-btns {
         text-align: center;
     }
 
+    .gs-model__title {
+        font-size: 1.6rem;
+    }
 }

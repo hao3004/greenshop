@@ -188,7 +188,7 @@ a.cart-btn.search-btn--mobile:hover form.search.search--mobile {
 	    top: 0;
 	    left: 0;
 	    margin: 0;
-	    z-index: 9999;
+	    z-index: 25;
 	    padding: 0;
 	}
     

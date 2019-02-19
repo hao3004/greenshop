@@ -2031,3 +2031,10 @@ p.gs-news__excerpt {
     color: #3fb871;
     font-size: 3.5rem;
 }
+
+button:focus,
+textarea:focus,
+input:focus,
+a:focus {
+    outline: none;
+  }
