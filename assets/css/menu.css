@@ -58,13 +58,12 @@ nav.gs-navigation {
 
 .main-menu ul {
     display: flex;
-    flex-direction: column; /* by default UL stack subitems */
+    flex-direction: column;
     color: black;
 }
 
 .main-menu ul li {
     list-style-type: none;
-    /* flex: 1 1 auto; */
     display: flex;
     text-align: center;
     position: relative;

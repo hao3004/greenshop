@@ -1991,3 +1991,7 @@ a:active , a:visited, a:link,
 .news_item, .slick-slide {
     cursor: pointer;
 }
+
+.has-sub ul li a {
+    min-width: 130px;
+}
