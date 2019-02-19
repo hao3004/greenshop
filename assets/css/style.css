@@ -462,6 +462,10 @@ span.product-item__price del {
     transition: .2s;
 }
 
+.footer-shortcuts .gs-footer-text:hover {
+    color: #fff;
+}
+
 .footer-col__item .gs-footer-text:hover {
     color: #fff;
 }
