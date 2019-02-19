@@ -1,3 +1,6 @@
+// $(window).on('load',function(){
+//     $('#myModal').modal('show');
+// });
 $(document).ready(function(){
     // MENU
     //applying arrows that indicates nested items
@@ -10,9 +13,6 @@ $(document).ready(function(){
         event.stopPropagation();
         $(this).children('ul').toggleClass('show');
     });
-
-    // $('.social-btns__share').tooltip({
-    //     trigger: 'manual'
-    // })
-    // .tooltip('show');
+    
+    // $('#myModal').modal('show');
 });

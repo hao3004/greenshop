@@ -22,6 +22,35 @@
 		<link rel="stylesheet" href="assets/css/responsive.css">
 	</head>
 	<body>
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="gs-model">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="gs-model__img">
+							<img src="./assets/images/model-img.png" alt="model-img"/>
+						</div>
+						<div class="gs-model__content">
+							<img src="./assets/images/model-text.png" alt="model-text"/>
+							<h2 class="gs-model__title">
+								Đăng ký email ngay hôm nay
+							</h2>
+							<form class="gs-model-subscribe__form gs-subscribe__form gs-register__form">
+								<input type="email" placeholder="Nhập email của bạn vào đây">
+								<button class="btn btn-lg btn-success gs-subscribe__form__btn" type="submit"><i class="fab fa-telegram-plane"></i></button>
+								<span class="gs-subscribe__description">Đăng ký email ngay hôm nay để nhận các thông tin về sự kiện và các chương trình giảm giá từ chúng tôi.</span>
+								<div class="gs-register__form--hasSubscribe">
+									<input type="checkbox" id="hasSubscribe">
+									<label for="hasSubscribe">Đăng kí nhận thông tin qua email</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<header id="gs-header" class="gs-header">
 			<div class="gs-header__top">
 				<div class="container">
@@ -1159,9 +1188,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./assets/js/main.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+		<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
         <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
-        <script type="text/javascript" src="assets/js/slide.js"></script>
+		<script type="text/javascript" src="assets/js/slide.js"></script>
+		<script>
+			window.addEventListener('load', function() {
+				console.log('All assets are loaded');
+				$('#myModal').modal('show');
+				console.log('bottom');
+			})
+		</script>
 	</body>
 </html>
