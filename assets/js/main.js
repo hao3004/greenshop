@@ -1,6 +1,3 @@
-window.addEventListener('load', function() {
-    $('#myModal').modal('show');
-})
 $(document).ready(function(){
     // MENU
     //applying arrows that indicates nested items
