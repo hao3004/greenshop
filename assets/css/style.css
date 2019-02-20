@@ -1981,11 +1981,16 @@ p.gs-news__excerpt {
 }
 
 button:focus, button:active, textarea:focus, input:focus,
-a:active , a:visited, a:link,
+a:active , a:visited, a:link, a:focus, 
 .gs-cart-product td span,
 .product-item-group:focus,
 .slick-slide:focus {
     outline: none;
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
 }
 
 .news_item, .slick-slide {
