@@ -230,7 +230,8 @@ a.cart-btn.search-btn--mobile:hover form.search.search--mobile {
     #mm-toggle:target > ul {
 	    display: block;
 	    position: absolute;
-	    width: 106.7%;
+        width: 106.7%;
+        z-index: 9;
 	}
     
     #mm-toggle:target #mm-btn-open,
